@@ -10,6 +10,16 @@ Linked List
 ===========
 Add two numbers (https://github.com/Prathyusha68/Leet-Code/tree/main/0002-add-two-numbers)
 
+Greedy Algorithm
+================
+N meetings in one room (https://github.com/Prathyusha68/Leet-Code/tree/main/N%20meetings%20in%20one%20room%20-%20GFG)
+
+Minimum Platforms (https://github.com/Prathyusha68/Leet-Code/tree/main/Minimum%20Platforms%20-%20GFG)
+
+Job Sequencing Problem (https://github.com/Prathyusha68/Leet-Code/tree/main/Job%20Sequencing%20Problem%20-%20GFG)
+
+Fractional Knapsack (https://github.com/Prathyusha68/Leet-Code#:~:text=Fractional%20Knapsack%20%2D%20GFG)
+
 Backtracking
 ============
  Sudoku Solver (https://github.com/Prathyusha68/Leet-Code/tree/main/0037-sudoku-solver)

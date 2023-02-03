@@ -20,17 +20,13 @@ class Solution{
     	int max_platforms = 1;
     	while((i < n) && (j < n))
     	{
-    	    int start = arr[i], end = dep[j];
-
     	    //if a train received when already a train occupied platform new platform required
-    	    if(start <= end)
+    	    if(arr[i] <= dep[j])
     	    {
     	        platform_needed++;
     	        i++;
     	    }
-
-    	    // if a train departured before a train arraived then 1 platform will be freed
-    	    if(start > end)
+            else // if a train departured before a train arraived then 1 platform will be freed
     	    {
     	        platform_needed--;
     	        j++;

@@ -1,3 +1,6 @@
+Coding Patterns
+===============
+
 Backtracking
 ============
  Sudoku Solver (https://github.com/Prathyusha68/Leet-Code/tree/main/0037-sudoku-solver)

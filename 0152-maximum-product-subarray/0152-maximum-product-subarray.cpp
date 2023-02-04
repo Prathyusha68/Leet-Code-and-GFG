@@ -9,7 +9,8 @@
 class Solution {
 public:
     int maxProduct(vector<int>& nums) {
-        int max_prod_end = nums[0], min_prod_end = nums[0], max_prod_overall = nums[0]; 
+        int max_prod_end = nums[0], min_prod_end = nums[0], max_prod_overall = nums[0];
+        
         for(int i = 1; i < nums.size(); i++)
         {
             // max of curr val, prod of curr val and max prod till now,

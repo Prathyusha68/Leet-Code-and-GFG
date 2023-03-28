@@ -89,7 +89,7 @@ class Solution
     //Function to return max value that can be put in knapsack of capacity W.
     int knapSack(int W, int wt[], int val[], int n) 
     { 
-       int type = 1;
+       int type = 0;
        switch(type)
        {
            case MEMORIZATION_METHOD :

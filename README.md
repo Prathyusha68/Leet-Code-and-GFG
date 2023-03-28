@@ -20,6 +20,10 @@ Job Sequencing Problem (https://github.com/Prathyusha68/Leet-Code/tree/main/Job%
 
 Fractional Knapsack (https://github.com/Prathyusha68/Leet-Code#:~:text=Fractional%20Knapsack%20%2D%20GFG)
 
+Dynamic Programming
+===================
+0/1 Knapsack problem (https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0%20-%201%20Knapsack%20Problem%20-%20GFG)
+
 Backtracking
 ============
  Sudoku Solver (https://github.com/Prathyusha68/Leet-Code/tree/main/0037-sudoku-solver)

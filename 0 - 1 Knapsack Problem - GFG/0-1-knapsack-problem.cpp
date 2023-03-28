@@ -61,7 +61,6 @@ class Solution
     
     int optimization(int W, int wt[], int val[], int n) 
     {
-        vector<vector<int>> dp(n, vector<int>(W+1, 0));
         vector<int> prev(W+1, 0);
         
         for(int i = wt[0]; i <= W; i++)
@@ -69,8 +68,7 @@ class Solution
         
         for(int i = 1; i < n; i++)
         {
-            vector<int> curr(W+1, 0);
-            for(int cap = 0; cap <= W; cap++)
+            for(int cap = W; cap >= 0; cap--)
             {
                 int notTake = 0 + prev[cap];
 
@@ -78,9 +76,8 @@ class Solution
                 if(cap >= wt[i])
                     take = val[i] + prev[cap-wt[i]];
                     
-                curr[cap] = max(take, notTake);
+                prev[cap] = max(take, notTake);
             }
-            prev = curr;
         }
         
         return prev[W];
@@ -89,22 +86,40 @@ class Solution
     //Function to return max value that can be put in knapsack of capacity W.
     int knapSack(int W, int wt[], int val[], int n) 
     { 
-       int type = 0;
+       int type = 2;
        switch(type)
        {
            case MEMORIZATION_METHOD :
            {
+               /**
+                *  Time Complexity : O(N * W) 
+                *     (There are N*W states therefore at max ‘N*W’ new problems will be solved.)
+                *  Space Complexity : O(N * W) + O(N)
+                *     (We are using a recursion stack space(O(N)) and a 2D array ( O(N*W)).)
+                */
                vector<vector<int>> dp(n+1, vector<int>(W+1, -1));
                return memorization(W, wt, val, n-1, dp);
                break;
            }
            case TABULATION_METHOD :
            {
+               /**
+                *  Time Complexity : O(N * W) 
+                *     (There are two nested loops)
+                *  Space Complexity : O(N * W)
+                *     (We are using an external array of size ‘N*W’. Stack Space is eliminated.)
+                */
                return tabulation(W, wt, val, n);
                break;
            }
            case OPTIMIZED_METHOD :
            {
+               /**
+                *  Time Complexity : O(N * W) 
+                *     (There are two nested loops)
+                *  Space Complexity : O(N * W)
+                *     (We are using an external array of size ‘W+1’ to store only one row.)
+                */
                return optimization(W, wt, val, n);
                break;
            }

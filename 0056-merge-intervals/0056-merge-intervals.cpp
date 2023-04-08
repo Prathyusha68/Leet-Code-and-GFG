@@ -4,25 +4,15 @@ public:
         sort(intervals.begin(), intervals.end());
         
         vector<vector<int>> mergeVec;
-        int firstVal = intervals[0][0], secVal = intervals[0][1];
+        mergeVec.push_back(intervals[0]);
+        
         for(int i = 1; i < intervals.size(); i++)
         {
-             if(secVal >= intervals[i][0])
-	         {
-	             if(secVal <= intervals[i][1])
-		         {
-		             secVal = intervals[i][1];
-		         }
-	         }
-	         else
-	         {
-	             mergeVec.push_back({firstVal,secVal});
-		         firstVal = intervals[i][0];
-		         secVal = intervals[i][1];
-	         }
-         }
- 
-         mergeVec.push_back({firstVal,secVal});
+            if(mergeVec.back()[1] >= intervals[i][0])
+                mergeVec.back()[1] = max (mergeVec.back()[1], intervals[i][1]);
+            else
+                mergeVec.push_back(intervals[i]);
+        }
         
         return mergeVec;
     }

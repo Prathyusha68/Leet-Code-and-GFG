@@ -35,6 +35,6 @@ public:
             if(ptr2 == nullptr) ptr2 = headA;
         }
         
-        return ptr1;
+        return ptr1 ? ptr1 : ptr2;
     }
 };

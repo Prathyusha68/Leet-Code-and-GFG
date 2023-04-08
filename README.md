@@ -6,9 +6,19 @@ Kadane's algorithm (https://github.com/Prathyusha68/Leet-Code/tree/main/0053-max
 
 K-Different pairs in an array (https://github.com/Prathyusha68/Leet-Code/tree/main/0532-k-diff-pairs-in-an-array)
 
+Remove duplicates from sorted array (https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0026-remove-duplicates-from-sorted-array)
+
 Linked List
 ===========
 Add two numbers (https://github.com/Prathyusha68/Leet-Code/tree/main/0002-add-two-numbers)
+
+Merge two sorted lists (https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0021-merge-two-sorted-lists)
+
+Intersection of two linked lists (https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0160-intersection-of-two-linked-lists)
+
+Reverse linked list (https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0206-reverse-linked-list)
+
+Middle of linked list (https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0876-middle-of-the-linked-list)
 
 Greedy Algorithm
 ================
@@ -20,9 +30,15 @@ Job Sequencing Problem (https://github.com/Prathyusha68/Leet-Code/tree/main/Job%
 
 Fractional Knapsack (https://github.com/Prathyusha68/Leet-Code#:~:text=Fractional%20Knapsack%20%2D%20GFG)
 
+Merge Intervals (https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0056-merge-intervals)
+
 Dynamic Programming
 ===================
 0/1 Knapsack problem (https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0%20-%201%20Knapsack%20Problem%20-%20GFG)
+
+Longest increasing subsequence (https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0300-longest-increasing-subsequence)
+
+Maximum product subarray (https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0152-maximum-product-subarray)
 
 Backtracking
 ============

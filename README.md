@@ -30,6 +30,8 @@ Monotonic Stack/Queue
 =====================
 Trapping rain water (https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0042-trapping-rain-water)
 
+Largest rectangle in histogram (https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0084-largest-rectangle-in-histogram)
+
 Greedy Algorithm
 ================
 N meetings in one room (https://github.com/Prathyusha68/Leet-Code/tree/main/N%20meetings%20in%20one%20room%20-%20GFG)

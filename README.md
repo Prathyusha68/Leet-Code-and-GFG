@@ -20,6 +20,12 @@ Reverse linked list (https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main
 
 Middle of linked list (https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0876-middle-of-the-linked-list)
 
+Delete node in a linked list (https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0237-delete-node-in-a-linked-list)
+
+Graphs
+======
+Flood fill (https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0733-flood-fill)
+
 Greedy Algorithm
 ================
 N meetings in one room (https://github.com/Prathyusha68/Leet-Code/tree/main/N%20meetings%20in%20one%20room%20-%20GFG)

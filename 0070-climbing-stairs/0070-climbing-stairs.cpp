@@ -49,7 +49,7 @@ class Solution {
     }
 public:
     int climbStairs(int n) {
-       int type = 2;
+       int type = 1;
        switch(type)
        {
            case MEMORIZATION_METHOD :

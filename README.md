@@ -52,6 +52,8 @@ Longest increasing subsequence (https://github.com/Prathyusha68/Leet-Code-and-GF
 
 Maximum product subarray (https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0152-maximum-product-subarray)
 
+Climbing stairs (https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0070-climbing-stairs)
+
 Backtracking
 ============
  Sudoku Solver (https://github.com/Prathyusha68/Leet-Code/tree/main/0037-sudoku-solver)

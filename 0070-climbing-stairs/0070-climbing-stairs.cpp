@@ -14,9 +14,22 @@ class Solution {
         
         return (dp[i] = (climbRecursive(n, i+1, dp) + climbRecursive(n, i+2, dp)));
     }
+    
+    int climbTabulation(int n)
+    {
+        vector<int> dp(n+1, 0);
+        dp[0] = 1;
+        dp[1] = 1;
+        for(int i = 2; i <= n; i++)
+        {
+            dp[i] = dp[i-1]+dp[i-2];
+        }
+        return dp[n];
+    }
 public:
     int climbStairs(int n) {
         vector<int> dp(n, -1);
-        return climbRecursive(n, 0, dp);
+        //return climbRecursive(n, 0, dp);
+        return climbTabulation(n);
     }
 };

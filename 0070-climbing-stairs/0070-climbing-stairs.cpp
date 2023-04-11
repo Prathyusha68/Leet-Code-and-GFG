@@ -26,10 +26,25 @@ class Solution {
         }
         return dp[n];
     }
+    
+    int optimization(int n)
+    {
+        int prev1 = 1;
+        int prev2 = 1;
+        int curr = 1;
+        for(int i = 2; i <= n; i++)
+        {
+            int tmp = curr;
+            curr = prev1+prev2;
+            prev2 = prev1;
+            prev1 = curr;
+        }
+        return prev1;
+    }
 public:
     int climbStairs(int n) {
         vector<int> dp(n, -1);
         //return climbRecursive(n, 0, dp);
-        return climbTabulation(n);
+        return optimization(n);
     }
 };

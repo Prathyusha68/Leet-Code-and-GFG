@@ -6,6 +6,7 @@ Arrays
 | 2.  | [Kadane's algorithm](https://github.com/Prathyusha68/Leet-Code/tree/main/0053-maximum-subarray)                                                |         |
 | 3.  | [K-Different pairs in an array](https://github.com/Prathyusha68/Leet-Code/tree/main/0532-k-diff-pairs-in-an-array)                             |         |     
 | 4.  | [Remove duplicates from sorted array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0026-remove-duplicates-from-sorted-array)    |         |
+| 5.  | [Second largest element in the array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Second-largest-element-in-the-array)         |         |
 
 Linked List
 ===========

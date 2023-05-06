@@ -121,8 +121,9 @@ public:
                 *     (There are 2 variables i and j, therefore, N*N states and we explicitly
                 *      run a loop inside the function which will run for N times, therefore at
                 *      max ‘N*N*N’ new problems will be solved.)
-                *  Space Complexity : O(N)
-                *     (We are using an external array of size ‘N’. Stack Space is eliminated.)
+                *  Space Complexity : O(N * N)
+                *     (We are using an external array of size ‘N * N’. Stack Space is
+                *      eliminated.)
                 */
                int c = cuts.size();
                

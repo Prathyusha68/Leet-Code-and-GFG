@@ -75,13 +75,13 @@ class Solution {
     
 public:
     int minCost(int n, vector<int>& cuts) {
-       int type = 2;
+       int type = 1;
        switch(type)
        {
            case RECURSION_METHOD :
            {
                /**
-                *  Time Complexity : O(2^N) 
+                *  Time Complexity : O(2^N * N) Exponential
                 *  Space Complexity : O(N)
                 *     (We are using a recursion stack space(O(N)).)
                 */
@@ -97,8 +97,10 @@ public:
            case MEMORIZATION_METHOD :
            {
                /**
-                *  Time Complexity : O(N * N) 
-                *     (There are N*N states therefore at max ‘N*N’ new problems will be solved.)
+                *  Time Complexity : O(N * N * N) 
+                *     (There are 2 variables i and j, therefore, N*N states and we explicitly
+                *      run a loop inside the function which will run for N times, therefore at
+                *      max ‘N*N*N’ new problems will be solved.)
                 *  Space Complexity : O(N * N) + O(N)
                 *     (We are using a recursion stack space(O(N)) and a 2D array ( O(N*N)).)
                 */
@@ -116,7 +118,9 @@ public:
            {
                /**
                 *  Time Complexity : O(N * N) 
-                *     (There are two nested loops)
+                *     (There are 2 variables i and j, therefore, N*N states and we explicitly
+                *      run a loop inside the function which will run for N times, therefore at
+                *      max ‘N*N*N’ new problems will be solved.)
                 *  Space Complexity : O(N)
                 *     (We are using an external array of size ‘N’. Stack Space is eliminated.)
                 */

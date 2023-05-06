@@ -72,7 +72,7 @@ class Solution {
     
 public:
     int maxCoins(vector<int>& nums) {
-        int type = 2;
+       int type = 2;
        switch(type)
        {
            case RECURSION_METHOD :

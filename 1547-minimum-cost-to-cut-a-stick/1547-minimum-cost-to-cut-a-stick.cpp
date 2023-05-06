@@ -13,9 +13,13 @@ class Solution {
         if (i > j) return 0;
         
         int minCost = INT_MAX;
+        
         for(int k = i; k <= j; k++)
         {
-            int cost = (cuts[j+1] - cuts[i-1]) + recursion(i, k-1, cuts) + recursion(k+1, j, cuts);
+            int cost = (cuts[j+1] - cuts[i-1])
+                + recursion(i, k-1, cuts)
+                + recursion(k+1, j, cuts);
+            
             minCost = min(cost, minCost);
         }
         
@@ -29,9 +33,12 @@ class Solution {
         if(dp[i][j] != -1) return dp[i][j];
         
         int minCost = INT_MAX;
+        
         for(int k = i; k <= j; k++)
         {
-            int cost = (cuts[j+1] - cuts[i-1]) + memorization(i, k-1, cuts, dp) + memorization(k+1, j, cuts, dp);
+            int cost = (cuts[j+1] - cuts[i-1])
+                + memorization(i, k-1, cuts, dp)
+                + memorization(k+1, j, cuts, dp);
             
             minCost = min(cost, minCost);
         }
@@ -39,9 +46,36 @@ class Solution {
         return dp[i][j] = minCost;
     }
     
+    int tabulation(vector<int>& cuts, int c)
+    {
+        vector<vector<int>> dp(c+2, vector<int>(c+2, 0));
+    
+        for(int i = c; i >= 1; i--)
+        {
+            for(int j = 1; j <= c; j++)
+            {
+                if(i > j) continue;
+                
+                int minCost = INT_MAX;
+        
+                for(int k = i; k <= j; k++)
+                {
+                    int cost = (cuts[j+1] - cuts[i-1])
+                        + dp[i][k-1]
+                        + dp[k+1][j];
+
+                    minCost = min(cost, minCost);
+                }
+                dp[i][j] = minCost;
+            }            
+        }
+        
+        return dp[1][c];
+    }
+    
 public:
     int minCost(int n, vector<int>& cuts) {
-       int type = 1;
+       int type = 2;
        switch(type)
        {
            case RECURSION_METHOD :
@@ -52,11 +86,11 @@ public:
                 *     (We are using a recursion stack space(O(N)).)
                 */
                int c = cuts.size();
-               cout<<n<<endl;
+
                cuts.push_back(n);
                cuts.insert(cuts.begin(), 0);
                sort(cuts.begin(), cuts.end());
-               cout<<cuts.size()<<endl;
+
                return recursion(1, c, cuts);
                break;
            }
@@ -86,7 +120,12 @@ public:
                 *  Space Complexity : O(N)
                 *     (We are using an external array of size ‘N’. Stack Space is eliminated.)
                 */
-               //return tabulation(s);
+               int c = cuts.size();
+               
+               cuts.push_back(n);
+               cuts.insert(cuts.begin(), 0);
+               sort(cuts.begin(), cuts.end());
+               return tabulation(cuts, c);
                break;
            }
            default:

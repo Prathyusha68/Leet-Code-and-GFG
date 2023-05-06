@@ -50,6 +50,7 @@ Dynamic Programming
 | 2.  | [Longest increasing subsequence](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0300-longest-increasing-subsequence)              |         |
 | 3.  | [Maximum product subarray](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0152-maximum-product-subarray)                          |         |
 | 4.  | [Climbing stairs](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0070-climbing-stairs)                                            |         |
+| 5.  | [Minimum cost to cut a stick](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/1547-minimum-cost-to-cut-a-stick)                    | Partition DP |
 
 Backtracking
 ============

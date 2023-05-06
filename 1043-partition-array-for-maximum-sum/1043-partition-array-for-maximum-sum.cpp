@@ -80,7 +80,7 @@ public:
            case RECURSION_METHOD :
            {
                /**
-                *  Time Complexity : O(2^N * N) Exponential
+                *  Time Complexity : Exponential
                 *  Space Complexity : O(N)
                 *     (We are using a recursion stack space(O(N)).)
                 */
@@ -91,12 +91,11 @@ public:
            case MEMORIZATION_METHOD :
            {
                /**
-                *  Time Complexity : O(N * N * N) 
-                *     (There are 2 variables i and j, therefore, N*N states and we explicitly
-                *      run a loop inside the function which will run for N times, therefore at
-                *      max ‘N*N*N’ new problems will be solved.)
-                *  Space Complexity : O(N * N) + O(N)
-                *     (We are using a recursion stack space(O(N)) and a 2D array ( O(N*N)).)
+                *  Time Complexity : O(N * k) 
+                *     (There are a total of N states and for each state, we are running a loop
+                *      from 0 to k..)
+                *  Space Complexity : O(N) + O(N)
+                *     (We are using a recursion stack space(O(N)) and a 1D array ( O(N)).)
                 */
                
                vector<int> dp(arr.size(), -1);
@@ -106,10 +105,9 @@ public:
            case TABULATION_METHOD :
            {
                /**
-                *  Time Complexity : O(N * N) 
-                *     (There are 2 variables i and j, therefore, N*N states and we explicitly
-                *      run a loop inside the function which will run for N times, therefore at
-                *      max ‘N*N*N’ new problems will be solved.)
+                *  Time Complexity : O(N * k) 
+                *     (There are a total of N states and for each state, we are running a loop
+                *      from 0 to k.)
                 *  Space Complexity : O(N)
                 *     (We are using an external array of size ‘N’. Stack Space is eliminated.)
                 */

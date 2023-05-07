@@ -27,8 +27,8 @@ class Solution {
         
         if(dp[i][j] != -1) return dp[i][j];
         
-        int up = grid[i][j] + recursion(i-1, j, n, m, grid);
-        int left = grid[i][j] + recursion(i, j-1, n, m, grid);
+        int up = grid[i][j] + memorization(i-1, j, n, m, grid, dp);
+        int left = grid[i][j] + memorization(i, j-1, n, m, grid, dp);
         
         return dp[i][j] = min(up, left);
     }
@@ -108,7 +108,7 @@ class Solution {
     
 public:
     int minPathSum(vector<vector<int>>& grid) {
-       int type = 3;
+       int type = 1;
        switch(type)
        {
            case RECURSION_METHOD :

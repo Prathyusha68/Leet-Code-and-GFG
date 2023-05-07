@@ -122,9 +122,9 @@ public:
            case RECURSION_METHOD :
            {
                /**
-                *  Time Complexity : O(2^N) 
-                *  Space Complexity : O(N)
-                *     (We are using a recursion stack space(O(N)).)
+                *  Time Complexity : Exponentional  
+                *  Space Complexity : O(N * M)
+                *     (We are using a recursion stack space(O(N * M)).)
                 */
                int m = obstacleGrid.size();
                int n = obstacleGrid[0].size();
@@ -135,10 +135,11 @@ public:
            case MEMORIZATION_METHOD :
            {
                /**
-                *  Time Complexity : O(N * N) 
+                *  Time Complexity : O(N * M) 
                 *     (There are N*N states therefore at max ‘N*N’ new problems will be solved.)
-                *  Space Complexity : O(N * N) + O(N)
-                *     (We are using a recursion stack space(O(N)) and a 2D array ( O(N*N)).)
+                *  Space Complexity : O(N-1 * M-1) + O(N * M)
+                *     (We are using a recursion stack space(O(N * M)) and a 2D array
+                *     (O(N-1 * M-1)).)
                 */
                int m = obstacleGrid.size();
                int n = obstacleGrid[0].size();
@@ -150,10 +151,11 @@ public:
            case TABULATION_METHOD :
            {
                /**
-                *  Time Complexity : O(N * N) 
+                *  Time Complexity : O(N * M) 
                 *     (There are two nested loops)
-                *  Space Complexity : O(N)
-                *     (We are using an external array of size ‘N’. Stack Space is eliminated.)
+                *  Space Complexity : O(N * M)
+                *     (We are using an external array of size ‘N * M’. Stack Space is
+                *      eliminated.)
                 */
                return tabulation(obstacleGrid);
                break;
@@ -161,10 +163,10 @@ public:
            case OPTIMIZED_METHOD :
            {
                /**
-                *  Time Complexity : O(N * W) 
+                *  Time Complexity : O(N * M) 
                 *     (There are two nested loops)
-                *  Space Complexity : O(N * W)
-                *     (We are using an external array of size ‘W+1’ to store only one row.)
+                *  Space Complexity : O(N)
+                *     (We are using an external array of size ‘N’ to store only one row.)
                 */
                return optimization(obstacleGrid);
                break;

@@ -53,9 +53,35 @@ class Solution {
         return dp[0][0];
     }
     
+    int optimization(vector<vector<int>>& triangle)
+    {
+        int n = triangle.size();
+
+        vector<int> next(n+1, 0);
+            
+        for(int j = 0; j < n; j++)
+            next[j] = triangle[n-1][j];
+        
+        for(int i = n-2; i >= 0; i--)
+        {
+            vector<int> curr(n+1, 0);
+            for(int j = i; j >= 0; j--)
+            {
+                int down = triangle[i][j] + next[j];
+
+                int diagnol = triangle[i][j] + next[j+1];
+        
+                curr[j] = min(down, diagnol);
+            }
+            next = curr;
+        }
+        
+        return next[0];
+    }
+    
 public:
     int minimumTotal(vector<vector<int>>& triangle) {
-       int type = 2;
+       int type = 3;
        switch(type)
        {
            case RECURSION_METHOD :
@@ -106,7 +132,7 @@ public:
                 *  Space Complexity : O(N)
                 *     (We are using an external array of size ‘N’ to store only one row.)
                 */
-               //return optimization(obstacleGrid);
+               return optimization(triangle);
                break;
            }
            default:

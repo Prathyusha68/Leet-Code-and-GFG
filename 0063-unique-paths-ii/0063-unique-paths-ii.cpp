@@ -74,9 +74,49 @@ class Solution {
         return dp[m-1][n-1];
     }
     
+    int optimization(vector<vector<int>>& obstacleGrid)
+    {
+        int m = obstacleGrid.size();
+        int n = obstacleGrid[0].size();
+        
+        vector<int> prev(n, 0);
+        
+        for(int i = 0; i < m; i++)
+        {
+            vector<int> curr(n, 0);
+            for(int j = 0; j < n; j++)
+            {
+                if(obstacleGrid[i][j] == 1)
+                {
+                    curr[j] = 0; 
+                    continue;
+                }
+                
+                if((i == 0) && (j == 0))
+                {
+                    curr[j] = 1;
+                    continue;
+                }
+                
+                int up = 0;
+                if(i-1 >= 0)
+                    up = prev[j];
+                
+                int left = 0;
+                if(j-1 >= 0)
+                    left = curr[j-1];
+
+                curr[j] = up + left;
+            }
+            prev = curr;
+        }
+        
+        return prev[n-1];
+    }
+    
 public:
     int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {
-       int type = 2;
+       int type = 3;
        switch(type)
        {
            case RECURSION_METHOD :
@@ -116,6 +156,17 @@ public:
                 *     (We are using an external array of size ‘N’. Stack Space is eliminated.)
                 */
                return tabulation(obstacleGrid);
+               break;
+           }
+           case OPTIMIZED_METHOD :
+           {
+               /**
+                *  Time Complexity : O(N * W) 
+                *     (There are two nested loops)
+                *  Space Complexity : O(N * W)
+                *     (We are using an external array of size ‘W+1’ to store only one row.)
+                */
+               return optimization(obstacleGrid);
                break;
            }
            default:

@@ -99,11 +99,11 @@ public:
            case MEMORIZATION_METHOD :
            {
                /**
-                *  Time Complexity : O(N * M) 
+                *  Time Complexity : O(N * N) 
                 *     (There are N*N states therefore at max ‘N*N’ new problems will be solved.)
-                *  Space Complexity : O(N-1 * M-1) + O(N * M)
-                *     (We are using a recursion stack space(O(N * M)) and a 2D array
-                *     (O(N-1 * M-1)).)
+                *  Space Complexity : O(N) + O(N * N)
+                *     (We are using a recursion stack space(O(N)) and a 2D array
+                *     (O(N * N)).)
                 */
                int n = triangle.size();
 
@@ -115,10 +115,10 @@ public:
            case TABULATION_METHOD :
            {
                /**
-                *  Time Complexity : O(N * M) 
+                *  Time Complexity : O(N * N) 
                 *     (There are two nested loops)
-                *  Space Complexity : O(N * M)
-                *     (We are using an external array of size ‘N * M’. Stack Space is
+                *  Space Complexity : O(N * N)
+                *     (We are using an external array of size ‘N * N’. Stack Space is
                 *      eliminated.)
                 */
                return tabulation(triangle);
@@ -127,7 +127,7 @@ public:
            case OPTIMIZED_METHOD :
            {
                /**
-                *  Time Complexity : O(N * M) 
+                *  Time Complexity : O(N * N) 
                 *     (There are two nested loops)
                 *  Space Complexity : O(N)
                 *     (We are using an external array of size ‘N’ to store only one row.)

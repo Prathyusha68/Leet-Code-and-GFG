@@ -35,9 +35,53 @@ class Solution {
         return dp[i][j] = min(up, min(ld, rd));
     }
     
+    int tabulation(vector<vector<int>>& grid)
+    {
+        int n = grid.size();
+        int m = grid[0].size();
+        vector<vector<int>> dp(n, vector<int>(m, 0));
+        
+        for(int i = 0; i < m; i++)
+            dp[0][i] = grid[0][i];
+        
+        for(int i = 1; i < n; i++)
+        {
+            for(int j = 0; j < m; j++)
+            {
+                int up = grid[i][j];
+                if(i-1 >= 0)
+                    up += dp[i-1][j];
+                else
+                    up = 1e9;
+                
+                int ld = grid[i][j];
+                if(i-1 >= 0 && (j-1 >= 0))
+                    ld += dp[i-1][j-1];
+                else
+                    ld = 1e9;
+                
+                int rd = grid[i][j];
+                if(i-1 >= 0 && (j+1 < m))
+                    rd += dp[i-1][j+1];
+                else
+                    rd = 1e9;
+        
+                dp[i][j] = min(up, min(ld, rd));
+            }
+        }
+        
+        int mini = INT_MAX;
+        for(int k = 0; k < m; k++)
+        {
+           mini = min(mini, dp[n-1][k]);
+        }
+               
+        return mini;
+    }
+    
 public:
     int minFallingPathSum(vector<vector<int>>& matrix) {
-        int type = 1;
+        int type = 2;
        switch(type)
        {
            case RECURSION_METHOD :
@@ -89,7 +133,7 @@ public:
                 *     (We are using an external array of size ‘N * M’. Stack Space is
                 *      eliminated.)
                 */
-               //return tabulation(matrix);
+               return tabulation(matrix);
                break;
            }
            case OPTIMIZED_METHOD :

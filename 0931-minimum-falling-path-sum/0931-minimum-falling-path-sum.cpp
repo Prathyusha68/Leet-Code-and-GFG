@@ -1,0 +1,113 @@
+class Solution {
+    enum method
+    {
+        RECURSION_METHOD = 0,
+        MEMORIZATION_METHOD = 1,
+        TABULATION_METHOD = 2,
+        OPTIMIZED_METHOD = 3
+    };
+    
+    int recursion(int i, int j, int n, int m, vector<vector<int>>& grid)
+    {   
+        if((j < 0) || (j >= m)) return 1e9;
+     
+        if(i == 0) return grid[i][j];
+        
+        int up = grid[i][j] + recursion(i-1, j, n, m, grid);
+        int ld = grid[i][j] + recursion(i-1, j-1, n, m, grid);
+        int rd = grid[i][j] + recursion(i-1, j+1, n, m, grid);
+        
+        return min(up, min(ld, rd));
+    }
+    
+    int memorization(int i, int j, int n, int m, vector<vector<int>>& grid, vector<vector<int>>& dp)
+    {   
+        if((j < 0) || (j >= m)) return 1e9;
+     
+        if(i == 0) return grid[i][j];
+        
+        if(dp[i][j] != -1) return dp[i][j];
+        
+        int up = grid[i][j] + memorization(i-1, j, n, m, grid, dp);
+        int ld = grid[i][j] + memorization(i-1, j-1, n, m, grid, dp);
+        int rd = grid[i][j] + memorization(i-1, j+1, n, m, grid, dp);
+        
+        return dp[i][j] = min(up, min(ld, rd));
+    }
+    
+public:
+    int minFallingPathSum(vector<vector<int>>& matrix) {
+        int type = 1;
+       switch(type)
+       {
+           case RECURSION_METHOD :
+           {
+               /**
+                *  Time Complexity : Exponentional  
+                *  Space Complexity : O(N * M)
+                *     (We are using a recursion stack space(O(N * M)).)
+                */
+               int n = matrix.size();
+               int m = matrix[0].size();
+               int mini = INT_MAX;
+               for(int i = 0; i < n; i++)
+               {
+                    mini = min(mini, recursion(n-1, i, n, m, matrix));
+               }
+               
+               return mini;
+               break;
+           }
+           case MEMORIZATION_METHOD :
+           {
+               /**
+                *  Time Complexity : O(N * M) 
+                *     (There are N*N states therefore at max ‘N*N’ new problems will be solved.)
+                *  Space Complexity : O(N-1 * M-1) + O(N * M)
+                *     (We are using a recursion stack space(O(N * M)) and a 2D array
+                *     (O(N-1 * M-1)).)
+                */
+               int n = matrix.size();
+               int m = matrix[0].size();
+               vector<vector<int>> dp(n, vector<int>(m, -1));
+               int mini = INT_MAX;
+               
+               for(int i = 0; i < n; i++)
+               {
+                    mini = min(mini, memorization(n-1, i, n, m, matrix, dp));
+               }
+               
+               return mini;
+               break;
+           }
+           case TABULATION_METHOD :
+           {
+               /**
+                *  Time Complexity : O(N * M) 
+                *     (There are two nested loops)
+                *  Space Complexity : O(N * M)
+                *     (We are using an external array of size ‘N * M’. Stack Space is
+                *      eliminated.)
+                */
+               //return tabulation(matrix);
+               break;
+           }
+           case OPTIMIZED_METHOD :
+           {
+               /**
+                *  Time Complexity : O(N * M) 
+                *     (There are two nested loops)
+                *  Space Complexity : O(N)
+                *     (We are using an external array of size ‘N’ to store only one row.)
+                */
+               //return optimization(matrix);
+               break;
+           }
+           default:
+           {
+               cout<<"Invalid Method type"<<endl;
+           }
+       }
+       return 0; 
+    }
+};

@@ -79,9 +79,56 @@ class Solution {
         return mini;
     }
     
+    int optimization(vector<vector<int>>& grid)
+    {
+        int n = grid.size();
+        int m = grid[0].size();
+
+        vector<int> prev(m, 0);
+        
+        for(int i = 0; i < m; i++)
+            prev[i] = grid[0][i];
+        
+        for(int i = 1; i < n; i++)
+        {
+            vector<int> curr(m, 0);
+            for(int j = 0; j < m; j++)
+            {
+                int up = grid[i][j];
+                if(i-1 >= 0)
+                    up += prev[j];
+                else
+                    up = 1e9;
+                
+                int ld = grid[i][j];
+                if(i-1 >= 0 && (j-1 >= 0))
+                    ld += prev[j-1];
+                else
+                    ld = 1e9;
+                
+                int rd = grid[i][j];
+                if(i-1 >= 0 && (j+1 < m))
+                    rd += prev[j+1];
+                else
+                    rd = 1e9;
+        
+                curr[j] = min(up, min(ld, rd));
+            }
+            prev = curr;
+        }
+        
+        int mini = INT_MAX;
+        for(int k = 0; k < m; k++)
+        {
+           mini = min(mini, prev[k]);
+        }
+               
+        return mini;
+    }
+    
 public:
     int minFallingPathSum(vector<vector<int>>& matrix) {
-        int type = 2;
+        int type = 3;
        switch(type)
        {
            case RECURSION_METHOD :
@@ -144,7 +191,7 @@ public:
                 *  Space Complexity : O(N)
                 *     (We are using an external array of size ‘N’ to store only one row.)
                 */
-               //return optimization(matrix);
+               return optimization(matrix);
                break;
            }
            default:

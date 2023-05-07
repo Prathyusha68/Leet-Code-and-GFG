@@ -50,10 +50,14 @@ Dynamic Programming
 | 2.  | [Longest increasing subsequence](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0300-longest-increasing-subsequence)              |         |
 | 3.  | [Maximum product subarray](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0152-maximum-product-subarray)                          |         |
 | 4.  | [Climbing stairs](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0070-climbing-stairs)                                            |         |
-| 5.  | [Minimum cost to cut a stick](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/1547-minimum-cost-to-cut-a-stick)                    | Partition DP |
-| 6.  | [Partition array for maximum sum](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/1043-partition-array-for-maximum-sum)            | Partition DP |
-| 7.  | [Burst balloons](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0312-burst-balloons)                                              | Partition DP |
-| 8.  | [Count square submatrices with all ones](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/1277-count-square-submatrices-with-all-ones)| DP on squares |
+| 5.  | [Unique paths ii](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0063-unique-paths-ii)                                            | DP on grids |
+| 6.  | [Minimum path sum](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0064-minimum-path-sum)                                          | DP on grids |
+| 7.  | [Minimum path sum in triangular grid](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0120-triangle)                               | DP on grids |
+| 8.  | [Minimum falling path sum](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0931-minimum-falling-path-sum)                          | DP on grids |
+| 9.  | [Minimum cost to cut a stick](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/1547-minimum-cost-to-cut-a-stick)                    | Partition DP |
+| 10. | [Partition array for maximum sum](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/1043-partition-array-for-maximum-sum)            | Partition DP |
+| 11. | [Burst balloons](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0312-burst-balloons)                                              | Partition DP |
+| 12. | [Count square submatrices with all ones](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/1277-count-square-submatrices-with-all-ones)| DP on squares |
 
 Backtracking
 ============

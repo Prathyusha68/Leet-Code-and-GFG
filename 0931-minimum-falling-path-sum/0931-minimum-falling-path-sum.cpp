@@ -128,7 +128,7 @@ class Solution {
     
 public:
     int minFallingPathSum(vector<vector<int>>& matrix) {
-        int type = 3;
+       int type = 3;
        switch(type)
        {
            case RECURSION_METHOD :
@@ -154,9 +154,9 @@ public:
                /**
                 *  Time Complexity : O(N * M) 
                 *     (There are N*N states therefore at max ‘N*N’ new problems will be solved.)
-                *  Space Complexity : O(N-1 * M-1) + O(N * M)
+                *  Space Complexity : O(N * M) + O(N * M)
                 *     (We are using a recursion stack space(O(N * M)) and a 2D array
-                *     (O(N-1 * M-1)).)
+                *     (O(N * M)).)
                 */
                int n = matrix.size();
                int m = matrix[0].size();
@@ -188,8 +188,8 @@ public:
                /**
                 *  Time Complexity : O(N * M) 
                 *     (There are two nested loops)
-                *  Space Complexity : O(N)
-                *     (We are using an external array of size ‘N’ to store only one row.)
+                *  Space Complexity : O(M)
+                *     (We are using an external array of size ‘M’ to store only one row.)
                 */
                return optimization(matrix);
                break;

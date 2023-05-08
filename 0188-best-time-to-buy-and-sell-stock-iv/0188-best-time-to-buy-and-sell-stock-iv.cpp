@@ -95,7 +95,7 @@ class Solution {
     
 public:
     int maxProfit(int k, vector<int>& prices) {
-       int type = 3;
+       int type = 1;
        switch(type)
        {
            case RECURSION_METHOD :
@@ -112,11 +112,11 @@ public:
            case MEMORIZATION_METHOD :
            {
                /**
-                *  Time Complexity : O(N * 2) 
+                *  Time Complexity : O(N * 2 * k) 
                 *     (There are N*2 states therefore at max ‘N*2’ new problems will be solved.)
-                *  Space Complexity : O(N) + O(N * 2)
+                *  Space Complexity : O(N) + O(N * 2 * k)
                 *     (We are using a recursion stack space(O(N)) and a 2D array
-                *     (O(N * 2)).)
+                *     (O(N * 2 * k)).)
                 */
                int n = prices.size();
 
@@ -128,10 +128,10 @@ public:
            case TABULATION_METHOD :
            {
                /**
-                *  Time Complexity : O(N * 2) 
+                *  Time Complexity : O(N * 2 * k) 
                 *     (There are two nested loops)
-                *  Space Complexity : O(N * 2)
-                *     (We are using an external array of size ‘N * 2’. Stack Space is
+                *  Space Complexity : O(N * 2 * k)
+                *     (We are using an external array of size ‘N * 2 * k’. Stack Space is
                 *      eliminated.)
                 */
                return tabulation(prices, k);
@@ -140,10 +140,10 @@ public:
            case OPTIMIZED_METHOD :
            {
                /**
-                *  Time Complexity : O(N * 2) 
+                *  Time Complexity : O(N * 2 * k) 
                 *     (There are two nested loops)
-                *  Space Complexity : O(1)
-                *     (We are using an external array of size ‘2’ to store only one row.)
+                *  Space Complexity : O(2 * k + 1)
+                *     (We are using an external array of size ‘2 * k + 1’ to store only one row.)
                 */
                return optimization(prices, k);
                break;

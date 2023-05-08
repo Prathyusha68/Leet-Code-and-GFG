@@ -95,7 +95,7 @@ class Solution {
     
 public:
     int maxProfit(int k, vector<int>& prices) {
-       int type = 1;
+       int type = 2;
        switch(type)
        {
            case RECURSION_METHOD :

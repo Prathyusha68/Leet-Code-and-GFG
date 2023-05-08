@@ -78,15 +78,15 @@ class Solution {
     
 public:
     int maxProfit(vector<int>& prices) {
-       int type = 3;
+       int type = 1;
        switch(type)
        {
            case RECURSION_METHOD :
            {
                /**
                 *  Time Complexity : Exponentional  
-                *  Space Complexity : O(N * M)
-                *     (We are using a recursion stack space(O(N * M)).)
+                *  Space Complexity : O(N)
+                *     (We are using a recursion stack space(O(N)).)
                 */
                
                return recursion(0, 1, prices);
@@ -95,15 +95,15 @@ public:
            case MEMORIZATION_METHOD :
            {
                /**
-                *  Time Complexity : O(N * N) 
-                *     (There are N*N states therefore at max ‘N*N’ new problems will be solved.)
-                *  Space Complexity : O(N) + O(N * N)
+                *  Time Complexity : O(N * 2) 
+                *     (There are N*2 states therefore at max ‘N*2’ new problems will be solved.)
+                *  Space Complexity : O(N) + O(N * 2)
                 *     (We are using a recursion stack space(O(N)) and a 2D array
-                *     (O(N * N)).)
+                *     (O(N * 2)).)
                 */
                int n = prices.size();
 
-               vector<vector<int>> dp(n+1, vector<int>(n+1, -1));
+               vector<vector<int>> dp(n+1, vector<int>(2, -1));
                
                return memorization(0, 1, prices, dp);
                break;
@@ -111,10 +111,10 @@ public:
            case TABULATION_METHOD :
            {
                /**
-                *  Time Complexity : O(N * N) 
+                *  Time Complexity : O(N * 2) 
                 *     (There are two nested loops)
-                *  Space Complexity : O(N * N)
-                *     (We are using an external array of size ‘N * N’. Stack Space is
+                *  Space Complexity : O(N * 2)
+                *     (We are using an external array of size ‘N * 2’. Stack Space is
                 *      eliminated.)
                 */
                return tabulation(prices);
@@ -123,10 +123,10 @@ public:
            case OPTIMIZED_METHOD :
            {
                /**
-                *  Time Complexity : O(N * N) 
+                *  Time Complexity : O(N * 2) 
                 *     (There are two nested loops)
-                *  Space Complexity : O(N)
-                *     (We are using an external array of size ‘N’ to store only one row.)
+                *  Space Complexity : O(1)
+                *     (We are using an external array of size ‘2’ to store only one row.)
                 */
                return optimization(prices);
                break;

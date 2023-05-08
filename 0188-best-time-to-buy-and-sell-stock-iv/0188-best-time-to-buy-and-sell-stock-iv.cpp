@@ -40,9 +40,35 @@ class Solution {
         return dp[ind][transactions] = max((prices[ind] + memorization(ind+1, transactions+1, k, prices, dp)), (0 + memorization(ind+1, transactions, k, prices, dp)));
     }
     
+    int tabulation(vector<int>& prices, int k)
+    {
+        int n = prices.size();
+
+        vector<vector<int>> dp(n+1, vector<int>(2*k+1, 0));
+        
+        for(int ind = n-1; ind >= 0; ind--)
+        {
+            for(int transactions = 2*k -1; transactions >= 0; transactions--)
+            {
+                if(transactions%2 == 0)
+                {
+                    dp[ind][transactions] = max((-prices[ind] + dp[ind+1][transactions+1]),
+                                                 (0 + dp[ind+1][transactions]));
+                }
+                else
+                {
+                    dp[ind][transactions] = max((prices[ind] + dp[ind+1][transactions+1]),
+                                                 (0 + dp[ind+1][transactions]));
+                }
+            }
+        }
+        
+        return dp[0][0];
+    }
+    
 public:
     int maxProfit(int k, vector<int>& prices) {
-       int type = 1;
+       int type = 2;
        switch(type)
        {
            case RECURSION_METHOD :
@@ -81,7 +107,7 @@ public:
                 *     (We are using an external array of size ‘N * 2’. Stack Space is
                 *      eliminated.)
                 */
-               //return tabulation(prices);
+               return tabulation(prices, k);
                break;
            }
            case OPTIMIZED_METHOD :
@@ -92,7 +118,7 @@ public:
                 *  Space Complexity : O(1)
                 *     (We are using an external array of size ‘2’ to store only one row.)
                 */
-               //return optimization(prices);
+               //return optimization(prices, k);
                break;
            }
            default:

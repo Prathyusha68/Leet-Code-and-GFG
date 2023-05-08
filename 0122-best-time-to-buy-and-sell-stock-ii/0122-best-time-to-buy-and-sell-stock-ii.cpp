@@ -30,11 +30,11 @@ class Solution {
         if(buy)
         {
             return dp[ind][buy] = max((-prices[ind] + memorization(ind+1, 0, prices, dp)),
-                      (0 + recursion(ind+1, 1, prices)));
+                      (0 + memorization(ind+1, 1, prices, dp)));
         }
 
         return dp[ind][buy] = max((prices[ind] + memorization(ind+1, 1, prices, dp)),
-                  (0 + recursion(ind+1, 0, prices)));
+                  (0 + memorization(ind+1, 0, prices, dp)));
     }
     
     int tabulation(vector<int>& prices)
@@ -45,7 +45,6 @@ class Solution {
         
         for(int ind = n-1; ind >= 0; ind--)
         {
-
              dp[ind][1] = max((-prices[ind] + dp[ind+1][0]),
                           (0 + dp[ind+1][1]));
 
@@ -56,9 +55,30 @@ class Solution {
         return dp[0][1];
     }
     
+    int optimization(vector<int>& prices)
+    {
+        int n = prices.size();
+
+        vector<int> next(3, 0);
+        vector<int> curr(3, 0);
+        
+        for(int ind = n-1; ind >= 0; ind--)
+        {
+             curr[1] = max((-prices[ind] + next[0]),
+                          (0 + next[1]));
+
+             curr[0] = max((prices[ind] + next[1]),
+                          (0 + next[0]));
+            next = curr;
+        }
+        
+        return next[1];
+    }
+    
+    
 public:
     int maxProfit(vector<int>& prices) {
-       int type = 2;
+       int type = 3;
        switch(type)
        {
            case RECURSION_METHOD :
@@ -108,7 +128,7 @@ public:
                 *  Space Complexity : O(N)
                 *     (We are using an external array of size ‘N’ to store only one row.)
                 */
-               //return optimization(triangle);
+               return optimization(prices);
                break;
            }
            default:

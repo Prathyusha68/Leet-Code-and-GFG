@@ -66,9 +66,36 @@ class Solution {
         return dp[0][0];
     }
     
+    int optimization(vector<int>& prices, int k)
+    {
+        int n = prices.size();
+
+        vector<int> next(2*k+1, 0);
+        vector<int> curr(2*k+1, 0);
+        for(int ind = n-1; ind >= 0; ind--)
+        {
+            for(int transactions = 2*k -1; transactions >= 0; transactions--)
+            {
+                if(transactions%2 == 0)
+                {
+                    curr[transactions] = max((-prices[ind] + next[transactions+1]),
+                                                 (0 + next[transactions]));
+                }
+                else
+                {
+                    curr[transactions] = max((prices[ind] + next[transactions+1]),
+                                                 (0 + next[transactions]));
+                }
+            }
+            next = curr;
+        }
+        
+        return next[0];
+    }
+    
 public:
     int maxProfit(int k, vector<int>& prices) {
-       int type = 2;
+       int type = 3;
        switch(type)
        {
            case RECURSION_METHOD :
@@ -118,7 +145,7 @@ public:
                 *  Space Complexity : O(1)
                 *     (We are using an external array of size ‘2’ to store only one row.)
                 */
-               //return optimization(prices, k);
+               return optimization(prices, k);
                break;
            }
            default:

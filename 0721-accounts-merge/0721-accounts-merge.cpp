@@ -1,27 +1,29 @@
 class disjointSets
 {
-    vector<long long int> parent, rank, size;
+    vector<int> parent, rank, size;
 public:
-    disjointSets(long long int n)
+    disjointSets(int n)
     {
         rank.resize(n+1, 0);
-        size.resize(n+1, 0);
+        size.resize(n+1, 1);
         parent.resize(n+1);
-        for(long long int i =0; i < n; i++)
+        for(int i =0; i < n; i++)
+        {
             parent[i] = i;
+        }
     }
     
-    long long int findParent(long long int p)
+    int findParent(int p)
     {
         if(p == parent[p])
             return p;
         return parent[p] = findParent(parent[p]);
     }
     
-    void unionByRank(long long int u, long long int v)
+    void unionByRank(int u, int v)
     {
-        long long int ulp_u = findParent(u);
-        long long int ulp_v = findParent(v);
+        int ulp_u = findParent(u);
+        int ulp_v = findParent(v);
         
         if(rank[ulp_u] < rank[ulp_v])
         {
@@ -38,10 +40,13 @@ public:
         }
     }
     
-    void unionBySize(long long int u, long long int v)
+    void unionBySize(int u, int v)
     {
-        long long int ulp_u = findParent(u);
-        long long int ulp_v = findParent(v);
+        int ulp_u = findParent(u);
+        int ulp_v = findParent(v);
+        
+        if(ulp_u == ulp_v)
+            return;
         
         if(size[ulp_u] < size[ulp_v])
         {
@@ -51,7 +56,6 @@ public:
         else
         {
             parent[ulp_v] = ulp_u;
-            //cout<<"disjoint :"<<size.size()<<" "<<ulp_u<<" "<<ulp_v<<" "<<size[ulp_u]<<" "<<size[ulp_v]<<endl;
             size[ulp_u] += size[ulp_v];
         }        
     }  
@@ -60,12 +64,12 @@ public:
 class Solution {
 public:
     vector<vector<string>> accountsMerge(vector<vector<string>>& accounts) {
-        disjointSets ds(accounts.size()+1);        
-        unordered_map<string, long long int> mapMailNode;
+        disjointSets ds(accounts.size());        
+        unordered_map<string, int> mapMailNode;
         
-        for(long long int i = 0; i < accounts.size(); i++)
+        for(int i = 0; i < accounts.size(); i++)
         {
-            for(long long int j = 1; j < accounts[i].size(); j++)
+            for(int j = 1; j < accounts[i].size(); j++)
             {
                 if(mapMailNode.find(accounts[i][j]) == mapMailNode.end())
                 {
@@ -73,7 +77,6 @@ public:
                 }
                 else
                 {
-                    //cout<<accounts.size()<<" "<<i<<" "<<mapMailNode[accounts[i][j]]<<endl;
                     ds.unionBySize(i, mapMailNode[accounts[i][j]]);
                 }
             }
@@ -82,13 +85,13 @@ public:
         vector<vector<string>> mergeAcc(accounts.size());
         for(auto it : mapMailNode)
         {
-            long long int node = ds.findParent(it.second);
+            int node = ds.findParent(it.second);
             mergeAcc[node].push_back(it.first);
         }
         
         vector<vector<string>> ans;
 
-        for(long long int i = 0; i < accounts.size(); i++)
+        for(int i = 0; i < accounts.size(); i++)
         {
             if(mergeAcc[i].size() == 0) continue;
 

@@ -65,8 +65,12 @@ class Solution {
 public:
     vector<vector<string>> accountsMerge(vector<vector<string>>& accounts) {
         disjointSets ds(accounts.size());        
-        unordered_map<string, int> mapMailNode;
+        unordered_map<string, int> mapMailNode; //<mail-id, node>
         
+        // Consider rows as nodes
+        // If same mail id is already available in map it means repeated,
+        // so try to connect those nodes which can be merged later, those
+        // belongs to same component.
         for(int i = 0; i < accounts.size(); i++)
         {
             for(int j = 1; j < accounts[i].size(); j++)
@@ -82,6 +86,7 @@ public:
             }
         }
         
+        // Merge Mail IDs : Find the ultimate parent node and add all mail-id's to that node
         vector<vector<string>> mergeAcc(accounts.size());
         for(auto it : mapMailNode)
         {
@@ -89,10 +94,11 @@ public:
             mergeAcc[node].push_back(it.first);
         }
         
+        // Add [name, mail-id-1, mail-id-2,....] to ans  
         vector<vector<string>> ans;
-
         for(int i = 0; i < accounts.size(); i++)
         {
+            // if they already got merged to parent node
             if(mergeAcc[i].size() == 0) continue;
 
             sort(mergeAcc[i].begin(), mergeAcc[i].end());

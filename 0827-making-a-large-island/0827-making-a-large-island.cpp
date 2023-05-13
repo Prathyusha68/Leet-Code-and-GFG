@@ -75,6 +75,7 @@ public:
         int di[] = {-1, 0, 1, 0};
         int dj[] = {0, 1, 0, -1};
         
+        // Create graph component(s) for grid by using disjoint set
         for(int i = 0; i < n; i++)
         {
             for(int j = 0; j < n; j++)
@@ -120,6 +121,8 @@ public:
                     {
                         int adjNode = adjRow * n + adjCol;
                         int parentNode = ds.findUlParent(adjNode);
+                        // Using set to remove duplicate parent nodes to avoid
+                        // repetitive addition if size fo same component
                         parentNodesSet.insert(parentNode);
                     }
                 }
@@ -134,6 +137,7 @@ public:
             }
         }
         
+        // check all ones in a grid case
         int allOnesIsland = 0;
         for(int i = 0; i < n; i++)
         {

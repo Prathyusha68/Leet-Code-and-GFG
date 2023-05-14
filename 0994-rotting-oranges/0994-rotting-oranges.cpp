@@ -23,11 +23,7 @@ public:
                     vist[i][j] = 2;
                     que.push({0, {i, j}});
                 }
-                if(grid[i][j] == 0)
-                {
-                    vist[i][j] = 2;
-                }
-                
+
                 if(grid[i][j] == 1)
                     cntFresh++;
             }

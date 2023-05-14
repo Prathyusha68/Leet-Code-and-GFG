@@ -50,7 +50,7 @@ public:
             int row = q.front().first;
             int col = q.front().second;
             q.pop();
-            //cout<<row<<" "<<col<<endl;
+
             for(int i = 0; i < 4; i++)
             {
                 int adjRow = row + dr[i];

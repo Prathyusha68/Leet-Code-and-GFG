@@ -23,7 +23,19 @@ Graphs
 ======
 | Sn. | Problem                                                                                                                                        | Pattern |
 | --- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| 1.  | [Flood fill](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0733-flood-fill)                                                      |         |
+| 1.  | [Rotting oranges](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0994-rotting-oranges)                                            | BFS     |
+| 2.  | [Flood fill](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0733-flood-fill)                                                      | BFS/DFS |
+| 3.  | [0/1 Matrix](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0542-01-matrix)                                                       | BFS     |
+| 4.  | [Surrounded regions](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0130-surrounded-regions)                                      | BFS     |
+| 5.  | [Number of Distinct Islands [dfs multisource]](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Number%20of%20Distinct%20Islands%20-%20GFG)| DFS |
+| 6.  | [Is graph bipartite](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0785-is-graph-bipartite)                                      | BFS/DFS |
+| 7.  | [Course schedule](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0207-course-schedule)                                            | Topo sort |
+| 8.  | [Course schedule - ii](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0210-course-schedule-ii)                                    | Topo sort |
+| 9.  | [Alien Dictionary](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Alien%20Dictionary%20-%20GFG)                                   | Topo sort |
+| 10. | [Number of operations to make network connected](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/1319-number-of-operations-to-make-network-connected) | MST/Disjoint set |
+| 11. | [Accounts merge](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0721-accounts-merge)                                              | MST/Disjoint set |
+| 12. | [Number Of Islands](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Number%20Of%20Islands%20-%20GFG)                               | MST/Disjoint set |
+| 13. | [Making a large island](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0827-making-a-large-island)                                | MST/Disjoint set |
 
 Monotonic Stack/Queue
 =====================

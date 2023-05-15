@@ -20,8 +20,6 @@ public:
         q.push({1, {0, 0}});
         dist[0][0] = 1;
         
-        int dr[] = {-1, 0, 1, 0, -1, -1, 1, 1};
-        int dc[] = {0, 1, 0, -1, -1, 1, 1, -1};
         while(!q.empty())
         {
             int distance = q.front().first;
@@ -29,16 +27,19 @@ public:
             int col = q.front().second.second;
             q.pop();
             
-            for(int i = 0; i < 8; i++)
+            for(int i = -1; i <= 1; i++)
             {
-                int adjRow = row + dr[i];
-                int adjCol = col + dc[i];
-
-                if(isValid(adjRow, adjCol, n, m) && (grid[adjRow][adjCol] == 0)
-                   && (distance+1 < dist[adjRow][adjCol]))
+                for(int j = -1; j <= 1; j++)
                 {
-                    q.push({distance+1, {adjRow, adjCol}});
-                    dist[adjRow][adjCol] = distance+1;
+                    int adjRow = row + i;
+                    int adjCol = col + j;
+
+                    if(isValid(adjRow, adjCol, n, m) && (grid[adjRow][adjCol] == 0)
+                       && (distance+1 < dist[adjRow][adjCol]))
+                    {
+                        q.push({distance+1, {adjRow, adjCol}});
+                        dist[adjRow][adjCol] = distance+1;
+                    }
                 }
             }            
         }

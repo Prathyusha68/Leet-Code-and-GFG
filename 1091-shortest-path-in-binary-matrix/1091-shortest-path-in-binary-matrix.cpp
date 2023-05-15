@@ -43,7 +43,8 @@ public:
             }            
         }
         
-        if(dist[n-1][m-1] == 1e9) return -1;
+        if(dist[n-1][m-1] == 1e9)
+            return -1;
         
         return dist[n-1][m-1];
     }

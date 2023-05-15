@@ -29,7 +29,6 @@ public:
             int col = q.front().second.second;
             q.pop();
             
-
             for(int i = 0; i < 8; i++)
             {
                 int adjRow = row + dr[i];
@@ -40,7 +39,6 @@ public:
                 {
                     q.push({distance+1, {adjRow, adjCol}});
                     dist[adjRow][adjCol] = distance+1;
-                    cout<<adjRow<<" "<<adjCol<<" "<<dist[adjRow][adjCol]<<endl;
                 }
             }            
         }

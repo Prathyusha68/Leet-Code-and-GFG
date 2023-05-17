@@ -36,6 +36,7 @@ Graphs
 | 11. | [Accounts merge](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0721-accounts-merge)                                              | MST/Disjoint set |
 | 12. | [Number Of Islands](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Number%20Of%20Islands%20-%20GFG)                               | MST/Disjoint set |
 | 13. | [Making a large island](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0827-making-a-large-island)                                | MST/Disjoint set |
+| 14. | [Shortest path in binary matrix](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/1091-shortest-path-in-binary-matrix)              | Shortest Path |
 
 Monotonic Stack/Queue
 =====================

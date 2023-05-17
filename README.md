@@ -37,6 +37,8 @@ Graphs
 | 12. | [Number Of Islands](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Number%20Of%20Islands%20-%20GFG)                               | MST/Disjoint set |
 | 13. | [Making a large island](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0827-making-a-large-island)                                | MST/Disjoint set |
 | 14. | [Shortest path in binary matrix](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/1091-shortest-path-in-binary-matrix)              | Shortest Path |
+| 15. | [Path with minimum effort](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/1631-path-with-minimum-effort)                          | Shortest Path |
+| 16. | [Cheapest flights within k stops](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0787-cheapest-flights-within-k-stops)            | Shortest Path |
 
 Monotonic Stack/Queue
 =====================
@@ -74,7 +76,7 @@ Dynamic Programming
 | 13. | [Partition array for maximum sum](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/1043-partition-array-for-maximum-sum)            | Partition DP |
 | 14. | [Burst balloons](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0312-burst-balloons)                                              | Partition DP |
 | 15. | [Count square submatrices with all ones](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/1277-count-square-submatrices-with-all-ones)| DP on squares |
-
+                
 Backtracking
 ============
 | Sn. | Problem                                                                                                                                        | Pattern |

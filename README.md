@@ -7,6 +7,9 @@ Arrays
 | 3.  | [K-Different pairs in an array](https://github.com/Prathyusha68/Leet-Code/tree/main/0532-k-diff-pairs-in-an-array)                             |         |     
 | 4.  | [Remove duplicates from sorted array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0026-remove-duplicates-from-sorted-array)    |         |
 | 5.  | [Second largest element in the array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Second-largest-element-in-the-array)         |         |
+| 6.  | [Product of array except self](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0238-product-of-array-except-self)                  |         |
+| 7.  | [Find all duplicates in an array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0442-find-all-duplicates-in-an-array)            |         |
+
 
 Linked List
 ===========

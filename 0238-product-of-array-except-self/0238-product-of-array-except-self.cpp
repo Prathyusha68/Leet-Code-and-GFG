@@ -4,8 +4,16 @@ public:
         int n = nums.size();
         vector<int> res(n);
         
-        int left = 1;
+        // Calculate all left side multiple
+        // i/p  :  1    2    3    4 
+        // left :       1   1*2   1*2*3
+        // right: 2*3*4 3*4  4
+        // fill left 1st elem and right last elem as "1"
+        // Now multiply left and right side multiples at that index
+        // o/p  :  24    12   8    6
         
+        int left = 1;
+    
         for(int i = 0; i < n; i++)
         {
             if(i > 0)

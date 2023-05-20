@@ -22,6 +22,13 @@ Linked List
 | 5.  | [Middle of linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0876-middle-of-the-linked-list)                            |         |
 | 6.  | [Delete node in a linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0237-delete-node-in-a-linked-list)                  |         |
 
+Binary Search
+=============
+| Sn. | Problem                                                                                                                                        | Pattern |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| 1.  | [Search in rotated sorted array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0033-search-in-rotated-sorted-array)              | Binary Search |
+| 2.  | [Find minimum in rotated sorted array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0153-find-minimum-in-rotated-sorted-array)  | Binary Search |
+
 Graphs
 ======
 | Sn. | Problem                                                                                                                                        | Pattern |

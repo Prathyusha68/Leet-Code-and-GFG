@@ -17,10 +17,11 @@ Linked List
 | --- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
 | 1.  | [Add two numbers](https://github.com/Prathyusha68/Leet-Code/tree/main/0002-add-two-numbers)                                                    |         |
 | 2.  | [Merge two sorted lists](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0021-merge-two-sorted-lists)                              |         |
-| 3.  | [Intersection of two linked lists](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0160-intersection-of-two-linked-lists)          |         |
-| 4.  | [Reverse linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0206-reverse-linked-list)                                    |         |
-| 5.  | [Middle of linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0876-middle-of-the-linked-list)                            |         |
-| 6.  | [Delete node in a linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0237-delete-node-in-a-linked-list)                  |         |
+| 3.  | [Merge k sorted lists](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0023-merge-k-sorted-lists)                                  | Min Heap|
+| 4.  | [Intersection of two linked lists](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0160-intersection-of-two-linked-lists)          |         |
+| 5.  | [Reverse linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0206-reverse-linked-list)                                    |         |
+| 6.  | [Middle of linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0876-middle-of-the-linked-list)                            |         |
+| 7.  | [Delete node in a linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0237-delete-node-in-a-linked-list)                  |         |
 
 Binary Search
 =============
@@ -31,6 +32,15 @@ Binary Search
 | 3.  | [Find minimum in rotated sorted array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0153-find-minimum-in-rotated-sorted-array)  | BS in 1D array |
 | 4.  | [Search a 2d matrix](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0074-search-a-2d-matrix)                                      | BS in 2D array |
 | 5.  | [Kth element of 2 sorted arrays](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/K-th%20element%20of%20two%20sorted%20Arrays%20-%20GFG) | BS in search space |
+
+Heaps
+=====
+| Sn. | Problem                                                                                                                                        |  Pattern  |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| 1.  | [Kth largest element in an array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0215-kth-largest-element-in-an-array)            | Max Heap  |
+| 2.  | [Kth smallest element in an array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Kth%20smallest%20element%20-%20GFG)             | Max Heap  |
+| 3.  | [Kth smallest element in a sorted matrix](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0378-kth-smallest-element-in-a-sorted-matrix) | Min Heap |
+| 4.  | [Merge k sorted lists](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0023-merge-k-sorted-lists)                                  | Min Heap |
 
 Graphs
 ======

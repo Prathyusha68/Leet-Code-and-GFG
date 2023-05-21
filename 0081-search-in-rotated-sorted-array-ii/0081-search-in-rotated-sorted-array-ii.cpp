@@ -7,7 +7,6 @@ public:
         {
             int mid = (start+end) >> 1;
             
-            cout<<start<<" "<<end<<" "<<mid<<endl;
             if(nums[mid] == target)
                 return true;
             

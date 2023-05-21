@@ -26,8 +26,11 @@ Binary Search
 =============
 | Sn. | Problem                                                                                                                                        | Pattern |
 | --- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| 1.  | [Search in rotated sorted array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0033-search-in-rotated-sorted-array)              | Binary Search |
-| 2.  | [Find minimum in rotated sorted array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0153-find-minimum-in-rotated-sorted-array)  | Binary Search |
+| 1.  | [Search in rotated sorted array - I](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0033-search-in-rotated-sorted-array)          | BS in 1D array |
+| 2.  | [Search in rotated sorted array - II](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0081-search-in-rotated-sorted-array-ii)      | BS in 1D array |
+| 3.  | [Find minimum in rotated sorted array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0153-find-minimum-in-rotated-sorted-array)  | BS in 1D array |
+| 4.  | [Search a 2d matrix](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0074-search-a-2d-matrix)                                      | BS in 2D array |
+| 5.  | [Kth element of 2 sorted arrays](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/K-th%20element%20of%20two%20sorted%20Arrays%20-%20GFG) | BS in search space |
 
 Graphs
 ======

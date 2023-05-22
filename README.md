@@ -31,7 +31,11 @@ Binary Search
 | 2.  | [Search in rotated sorted array - II](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0081-search-in-rotated-sorted-array-ii)      | BS in 1D array |
 | 3.  | [Find minimum in rotated sorted array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0153-find-minimum-in-rotated-sorted-array)  | BS in 1D array |
 | 4.  | [Search a 2d matrix](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0074-search-a-2d-matrix)                                      | BS in 2D array |
-| 5.  | [Kth element of 2 sorted arrays](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/K-th%20element%20of%20two%20sorted%20Arrays%20-%20GFG) | BS in search space |
+| 5.  | [Find Nth root of M](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Find%20Nth%20root%20of%20M%20-%20GFG)                         | BS in search space |
+| 6.  | [Kth element of 2 sorted arrays](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/K-th%20element%20of%20two%20sorted%20Arrays%20-%20GFG) | BS in search space |
+| 7.  | [Allocate minimum number of pages](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Allocate%20minimum%20number%20of%20pages%20-%20GFG) | BS in search space |
+| 8.  | [Aggressive Cows](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Aggressive%20Cows%20-%20GFG)                                     | BS in search space |
+
 
 Heaps
 =====

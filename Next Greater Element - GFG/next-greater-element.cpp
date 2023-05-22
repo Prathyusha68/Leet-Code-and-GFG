@@ -9,7 +9,7 @@ class Solution
     public:
     //Function to find the next greater element for each element of the array.
     vector<long long> nextLargerElement(vector<long long> arr, int n){
-        stack<long long> st;
+        stack<int> st;
         vector<long long> nle(n, -1);
         
         for(int i = n-1; i >=0; i--)
@@ -29,19 +29,7 @@ class Solution
             st.push(i);
         }
         
-        //reverse(nle.begin(), nle.end());
-        
         return nle;
-        /*stack<long long> st;
-        vector<long long> vec(n,-1);
-        for(int i=0;i<n;i++){
-            while (st.size()!=0 && arr[i]>arr[st.top()]){
-                   vec[st.top()]=arr[i];
-                   st.pop();
-            }
-            st.push(i);
-        }
-        return vec;*/
     }
 };
 

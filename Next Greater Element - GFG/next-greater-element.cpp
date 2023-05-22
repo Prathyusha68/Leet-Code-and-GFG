@@ -21,10 +21,6 @@ class Solution
             {
                 nle[i] = arr[st.top()];
             }
-            else
-            {
-                nle[i] = -1;
-            }
             
             st.push(i);
         }

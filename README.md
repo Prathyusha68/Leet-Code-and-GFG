@@ -9,7 +9,7 @@ Arrays
 | 5.  | [Second largest element in the array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Second-largest-element-in-the-array)         |         |
 | 6.  | [Product of array except self](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0238-product-of-array-except-self)                  |         |
 | 7.  | [Find all duplicates in an array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0442-find-all-duplicates-in-an-array)            |         |
-
+| 8.  | [Longest substring without repeating characters](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0003-longest-substring-without-repeating-characters) | 2 Pointer/ Sliding window |
 
 Linked List
 ===========
@@ -23,6 +23,16 @@ Linked List
 | 6.  | [Middle of linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0876-middle-of-the-linked-list)                            |         |
 | 7.  | [Delete node in a linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0237-delete-node-in-a-linked-list)                  |         |
 
+Monotonic Stack/Queue
+=====================
+| Sn. | Problem                                                                                                                                        |     Pattern     |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
+| 1.  | [Next greater element](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Next%20Greater%20Element%20-%20GFG)                         | Monotonic Stack |
+| 2.  | [Next greater element - I](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0496-next-greater-element-i)                            | Monotonic Stack |
+| 3.  | [Next greater element - II](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0503-next-greater-element-ii)                          | Monotonic Stack |
+| 4.  | [Trapping rain water](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0042-trapping-rain-water)                                    | Monotonic Stack |
+| 5.  | [Largest rectangle in histogram](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0084-largest-rectangle-in-histogram)              | Monotonic Stack |
+
 Binary Search
 =============
 | Sn. | Problem                                                                                                                                        | Pattern |
@@ -35,7 +45,6 @@ Binary Search
 | 6.  | [Kth element of 2 sorted arrays](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/K-th%20element%20of%20two%20sorted%20Arrays%20-%20GFG) | BS in search space |
 | 7.  | [Allocate minimum number of pages](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Allocate%20minimum%20number%20of%20pages%20-%20GFG) | BS in search space |
 | 8.  | [Aggressive Cows](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Aggressive%20Cows%20-%20GFG)                                     | BS in search space |
-
 
 Heaps
 =====
@@ -66,13 +75,6 @@ Graphs
 | 14. | [Shortest path in binary matrix](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/1091-shortest-path-in-binary-matrix)              | Shortest Path |
 | 15. | [Path with minimum effort](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/1631-path-with-minimum-effort)                          | Shortest Path |
 | 16. | [Cheapest flights within k stops](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0787-cheapest-flights-within-k-stops)            | Shortest Path |
-
-Monotonic Stack/Queue
-=====================
-| Sn. | Problem                                                                                                                                        | Pattern |
-| --- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| 1.  | [Trapping rain water](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0042-trapping-rain-water)                                    |         |
-| 2.  | [Largest rectangle in histogram](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0084-largest-rectangle-in-histogram)              |         |
 
 Greedy Algorithm
 ================

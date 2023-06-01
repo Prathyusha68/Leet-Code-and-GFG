@@ -30,9 +30,6 @@ public:
     int maxPathSum(TreeNode* root) {
         int maxSum = INT_MIN;
         
-        if(root && !root->left && !root->right)
-            return root->val;
-        
         maxPathSum(root, maxSum);
         return maxSum;
     }

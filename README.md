@@ -1,15 +1,17 @@
 Arrays
 ======
-| Sn. | Problem                                                                                                                                        | Pattern |
-| --- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| 1.  | [Two sum](https://github.com/Prathyusha68/Leet-Code/tree/main/0001-two-sum)                                                                    |         |
-| 2.  | [Kadane's algorithm](https://github.com/Prathyusha68/Leet-Code/tree/main/0053-maximum-subarray)                                                |         |
-| 3.  | [K-Different pairs in an array](https://github.com/Prathyusha68/Leet-Code/tree/main/0532-k-diff-pairs-in-an-array)                             |         |     
-| 4.  | [Remove duplicates from sorted array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0026-remove-duplicates-from-sorted-array)    |         |
-| 5.  | [Second largest element in the array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Second-largest-element-in-the-array)         |         |
-| 6.  | [Product of array except self](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0238-product-of-array-except-self)                  |         |
-| 7.  | [Find all duplicates in an array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0442-find-all-duplicates-in-an-array)            |         |
-| 8.  | [Longest substring without repeating characters](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0003-longest-substring-without-repeating-characters) | 2 Pointer/ Sliding window |
+| Sn. | Problem                                                                                                                                        |  Pattern  |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------- |  -------  |
+| 1.  | [2 sum](https://github.com/Prathyusha68/Leet-Code/tree/main/0001-two-sum)                                                                      | 2 Pointer |
+| 2.  | [3 sum](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0015-3sum)                                                                 | 2 Pointer |
+| 3.  | [4 sum](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0018-4sum)                                                                 | 2 Pointer |
+| 4.  | [Kadane's algorithm](https://github.com/Prathyusha68/Leet-Code/tree/main/0053-maximum-subarray)                                                |           |
+| 5.  | [K-Different pairs in an array](https://github.com/Prathyusha68/Leet-Code/tree/main/0532-k-diff-pairs-in-an-array)                             |           |     
+| 6.  | [Remove duplicates from sorted array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0026-remove-duplicates-from-sorted-array)    |           |
+| 7.  | [Second largest element in the array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Second-largest-element-in-the-array)         |           |
+| 8.  | [Product of array except self](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0238-product-of-array-except-self)                  |           |
+| 9.  | [Find all duplicates in an array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0442-find-all-duplicates-in-an-array)            |           |
+| 10.  | [Longest substring without repeating characters](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0003-longest-substring-without-repeating-characters) | 2 Pointer/ Sliding window |
 
 Linked List
 ===========
@@ -47,6 +49,15 @@ Binary Search
 | 8.  | [Aggressive Cows](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Aggressive%20Cows%20-%20GFG)                                     | BS in search space |
 
 Heaps
+=====
+| Sn. | Problem                                                                                                                                        |  Pattern  |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
+| 1.  | [Kth largest element in an array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0215-kth-largest-element-in-an-array)            | Max Heap  |
+| 2.  | [Kth smallest element in an array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Kth%20smallest%20element%20-%20GFG)             | Max Heap  |
+| 3.  | [Kth smallest element in a sorted matrix](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0378-kth-smallest-element-in-a-sorted-matrix) | Min Heap |
+| 4.  | [Merge k sorted lists](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0023-merge-k-sorted-lists)                                  | Min Heap |
+
+Trie
 =====
 | Sn. | Problem                                                                                                                                        |  Pattern  |
 | --- | ---------------------------------------------------------------------------------------------------------------------------------------------- | --------- |

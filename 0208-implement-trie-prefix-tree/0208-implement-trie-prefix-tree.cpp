@@ -48,6 +48,7 @@ public:
             }
             node = node->getNode(word[i]);
         }
+        
         node->setEnd();   
     }
     

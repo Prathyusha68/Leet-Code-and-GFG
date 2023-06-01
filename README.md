@@ -25,20 +25,21 @@ Linked List
 | 6.  | [Middle of linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0876-middle-of-the-linked-list)                            |         |
 | 7.  | [Delete node in a linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0237-delete-node-in-a-linked-list)                  |         |
 
-Monotonic Stack/Queue
-=====================
-| Sn. | Problem                                                                                                                                        |     Pattern     |
+Stack & Queue
+=============
+| Sn. | Problem                                                                                                                                        |    Pattern/DS   |
 | --- | ---------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
-| 1.  | [Next greater element](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Next%20Greater%20Element%20-%20GFG)                         | Monotonic Stack |
-| 2.  | [Next greater element - I](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0496-next-greater-element-i)                            | Monotonic Stack |
-| 3.  | [Next greater element - II](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0503-next-greater-element-ii)                          | Monotonic Stack |
-| 4.  | [Trapping rain water](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0042-trapping-rain-water)                                    | Monotonic Stack |
-| 5.  | [Largest rectangle in histogram](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0084-largest-rectangle-in-histogram)              | Monotonic Stack |
+| 1.  | [LRU Cache](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0146-lru-cache)                                                        | Stack           |
+| 2.  | [Next greater element](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Next%20Greater%20Element%20-%20GFG)                         | Monotonic Stack |
+| 3.  | [Next greater element - I](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0496-next-greater-element-i)                            | Monotonic Stack |
+| 4.  | [Next greater element - II](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0503-next-greater-element-ii)                          | Monotonic Stack |
+| 5.  | [Trapping rain water](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0042-trapping-rain-water)                                    | Monotonic Stack |
+| 6.  | [Largest rectangle in histogram](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0084-largest-rectangle-in-histogram)              | Monotonic Stack |
 
 Binary Search
 =============
-| Sn. | Problem                                                                                                                                        | Pattern |
-| --- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| Sn. | Problem                                                                                                                                        |   Pattern/DS   |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
 | 1.  | [Search in rotated sorted array - I](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0033-search-in-rotated-sorted-array)          | BS in 1D array |
 | 2.  | [Search in rotated sorted array - II](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0081-search-in-rotated-sorted-array-ii)      | BS in 1D array |
 | 3.  | [Find minimum in rotated sorted array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0153-find-minimum-in-rotated-sorted-array)  | BS in 1D array |
@@ -57,14 +58,42 @@ Heaps
 | 3.  | [Kth smallest element in a sorted matrix](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0378-kth-smallest-element-in-a-sorted-matrix) | Min Heap |
 | 4.  | [Merge k sorted lists](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0023-merge-k-sorted-lists)                                  | Min Heap |
 
+Binary Trees (BT)
+=================
+| Sn. | Problem                                                                                                                                        |  Pattern/DS   |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------- |  ----------   |
+| 1.  | [Tree right side view](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0199-binary-tree-right-side-view)                           | Binary Tree   |
+| 2.  | [Bottom View of Binary Tree](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Bottom%20View%20of%20Binary%20Tree%20-%20GFG)         | Binary Tree   |
+| 3.  | [Top View of Binary Tree](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Top%20View%20of%20Binary%20Tree%20-%20GFG)               | Binary Tree   |
+| 4.  | [Construct BT from preorder and inorder traversal](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0105-construct-binary-tree-from-preorder-and-inorder-traversal)| Binary Tree   |
+| 5.  | [Vertical order traversal of a BT](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0987-vertical-order-traversal-of-a-binary-tree)  | Binary Tree   |
+| 6.  | [Maximum width of BT](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0662-maximum-width-of-binary-tree)                            | Binary Tree   |
+| 7.  | [Level order traversal of BT](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0102-binary-tree-level-order-traversal)               | Binary Tree   |
+| 8.  | [Zigzag level order traversal of BT](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0103-binary-tree-zigzag-level-order-traversal) | Binary Tree   |
+| 9.  | [Maximum depth of binary tree](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0104-maximum-depth-of-binary-tree)                   | Binary Tree   |
+| 10. | [Diameter of binary tree](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0543-diameter-of-binary-tree)                             | Binary Tree   |
+| 11. | [Balanced binary tree](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0110-balanced-binary-tree)                                   | Binary Tree   |
+| 12. | [Same tree](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0100-same-tree)                                                         | Binary Tree   |
+| 13. | [Symmetric tree](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0101-symmetric-tree)                                               | Binary Tree   |
+| 14. | [Lowest common ancestor of a binary tree](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0236-lowest-common-ancestor-of-a-binary-tree) | Binary Tree   |
+| 15. | [Binary tree maximum path sum](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0124-binary-tree-maximum-path-sum)                   | Binary Tree   |
+
+Binary Search Tree (BST)
+========================
+| Sn. | Problem                                                                                                                                        |   Pattern/DS  |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------- |   ----------- |
+| 1.  | [Validate binary search tree](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0098-validate-binary-search-tree)                    |      BST      |
+
 Trie
 =====
-| Sn. | Problem                                                                                                                                        |  Pattern  |
-| --- | ---------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| 1.  | [Kth largest element in an array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0215-kth-largest-element-in-an-array)            | Max Heap  |
-| 2.  | [Kth smallest element in an array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Kth%20smallest%20element%20-%20GFG)             | Max Heap  |
-| 3.  | [Kth smallest element in a sorted matrix](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0378-kth-smallest-element-in-a-sorted-matrix) | Min Heap |
-| 4.  | [Merge k sorted lists](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0023-merge-k-sorted-lists)                                  | Min Heap |
+| Sn. | Problem                                                                                                                                        |  Pattern/DS  |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------------ |
+| 1.  | [Implement trie prefix tree](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0208-implement-trie-prefix-tree)                      | Trie         |
+| 2.  | [Implement Trie ll](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Implement%20Trie%20ll)                                         | Trie         |
+| 3.  | [Trie - Delete](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Trie%20%7C%20(Delete)%20-%20GFG)                                   | Trie         |
+| 4.  | [Count of distinct substrings](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Count%20of%20distinct%20substrings%20-%20GFG)       | Trie         |
+| 5.  | [Maximum XOR of Two Numbers in an Array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0421-maximum-xor-of-two-numbers-in-an-array) | Trie & Bit Manipulation |
+| 6.  | [Maximum XOR With an Element From Array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/1707-maximum-xor-with-an-element-from-array) | Trie & Bit Manipulation |
 
 Graphs
 ======

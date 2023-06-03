@@ -130,14 +130,14 @@ Dynamic Programming
 ===================
 | Sn. | Problem                                                                                                                                        | Pattern |
 | --- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| 1.  | [0/1 Knapsack problem](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0%20-%201%20Knapsack%20Problem%20-%20GFG)                   |         |
-| 2.  | [Longest increasing subsequence](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0300-longest-increasing-subsequence)              |         |
-| 3.  | [Maximum product subarray](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0152-maximum-product-subarray)                          |         |
-| 4.  | [Climbing stairs](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0070-climbing-stairs)                                            |         |
-| 5.  | [Unique paths ii](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0063-unique-paths-ii)                                            | DP on grids |
-| 6.  | [Minimum path sum](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0064-minimum-path-sum)                                          | DP on grids |
-| 7.  | [Minimum path sum in triangular grid](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0120-triangle)                               | DP on grids |
-| 8.  | [Minimum falling path sum](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0931-minimum-falling-path-sum)                          | DP on grids |
+| 1.  | [Climbing stairs](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0070-climbing-stairs)                                            | 1D DP   |
+| 2.  | [Unique paths ii](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0063-unique-paths-ii)                                            | DP on grids |
+| 3.  | [Minimum path sum](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0064-minimum-path-sum)                                          | DP on grids |
+| 4.  | [Minimum path sum in triangular grid](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0120-triangle)                               | DP on grids |
+| 5.  | [Minimum falling path sum](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0931-minimum-falling-path-sum)                          | DP on grids |
+| 6.  | [Maximum product subarray](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0152-maximum-product-subarray)                          | DP on subarray |
+| 7.  | [0/1 Knapsack problem](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0%20-%201%20Knapsack%20Problem%20-%20GFG)                   | DP on subsequence |
+| 8.  | [Longest increasing subsequence](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0300-longest-increasing-subsequence)              | DP on LIS |
 | 9.  | [Best time to buy and sell stock](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0121-best-time-to-buy-and-sell-stock)            | DP on stocks |
 | 10. | [Best time to buy and sell stock - II](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0122-best-time-to-buy-and-sell-stock-ii)    | DP on stocks |
 | 11. | [Best time to buy and sell stock - IV](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0188-best-time-to-buy-and-sell-stock-iv)    | DP on stocks |

@@ -38,14 +38,21 @@ private:
     {
         k = k%n;
         
+        // Reverse starting elements excepts last 'K' elems
         reverse(0, n-k-1, nums);
+        
+        // Reverse last 'K' elements
         reverse(n-k, n-1, nums);
+        
+        // Reverse whole "nums" vector
         reverse(0, n-1, nums);
     }
+    
 public:
     void rotate(vector<int>& nums, int k) {
         int n = nums.size();
-        
+    
+       //rotateApproch1(nums, k, n);
        rotateApproch2(nums, k, n);
         
     }

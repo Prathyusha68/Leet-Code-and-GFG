@@ -5,13 +5,19 @@ Arrays
 | 1.  | [2 sum](https://github.com/Prathyusha68/Leet-Code/tree/main/0001-two-sum)                                                                      | 2 Pointer |
 | 2.  | [3 sum](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0015-3sum)                                                                 | 2 Pointer |
 | 3.  | [4 sum](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0018-4sum)                                                                 | 2 Pointer |
-| 4.  | [Kadane's algorithm](https://github.com/Prathyusha68/Leet-Code/tree/main/0053-maximum-subarray)                                                |           |
+| 4.  | [Maximum subarray](https://github.com/Prathyusha68/Leet-Code/tree/main/0053-maximum-subarray)                                                  | Kadane's algorithm |
 | 5.  | [K-Different pairs in an array](https://github.com/Prathyusha68/Leet-Code/tree/main/0532-k-diff-pairs-in-an-array)                             |           |     
 | 6.  | [Remove duplicates from sorted array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0026-remove-duplicates-from-sorted-array)    |           |
 | 7.  | [Second largest element in the array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Second-largest-element-in-the-array)         |           |
 | 8.  | [Product of array except self](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0238-product-of-array-except-self)                  |           |
 | 9.  | [Find all duplicates in an array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0442-find-all-duplicates-in-an-array)            |           |
-| 10.  | [Longest substring without repeating characters](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0003-longest-substring-without-repeating-characters) | 2 Pointer/ Sliding window |
+| 10. | [Longest substring without repeating characters](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0003-longest-substring-without-repeating-characters) | 2 Pointer/ Sliding window |
+| 11. | [Sort colors](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0075-sort-colors)                                                   | Dutch National Flag Algorithm |
+| 12. | [Majority element](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0169-majority-element)                                         | Moore’s Voting Algorithm |
+| 13. | [Rotate An Array By K](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0189-rotate-array)                                         |             |
+| 14. | [Non decreasing array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0665-non-decreasing-array)                                 |             |
+| 15. | [Pivot/Equilibrium index](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0724-find-pivot-index)                                  |             |
+| 16. | [First missing positive](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0041-first-missing-positive)                             |             |
 
 Linked List
 ===========

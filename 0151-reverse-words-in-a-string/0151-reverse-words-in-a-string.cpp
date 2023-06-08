@@ -1,6 +1,5 @@
 class Solution {
-public:
-    string reverseWords(string s) {
+    string approach1(string s) {
         stack<string> st;
         string ans;
         
@@ -12,7 +11,6 @@ public:
                 while((i < s.length()) && (s[i] != ' '))
                 {
                     temp += s[i];
-                    //cout<<i<<" push :"<<temp<<endl;
                     i++;
                 }
 
@@ -29,11 +27,13 @@ public:
         while(!st.empty())
         {
             ans += " "+st.top();
-            //if(st.size() > 1)
-              //  ans += " ";
             st.pop();
         }
         
         return ans;
+    }
+public:
+    string reverseWords(string s) {
+        return approach1(s);
     }
 };

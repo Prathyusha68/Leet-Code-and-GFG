@@ -51,10 +51,11 @@ class Solution {
             if(res.length() == 0)
                 res = s.substr(i, j-i);
             else
-                res = s.substr(i, j-i)+" "+res;
+                res = s.substr(i, j-i) + " " + res;
             
             i = j+1;
         }
+        
         return res;
     }
     

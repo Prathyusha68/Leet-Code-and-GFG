@@ -13,7 +13,6 @@ public:
         
         for(int i = 0; i < min(start.length(), end.length()); i++)
         {
-            cout<<"enter"<<endl;
             if(start[i] != end[i])
                 return res;
             else

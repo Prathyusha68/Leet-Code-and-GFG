@@ -19,6 +19,14 @@ Arrays
 | 15. | [Pivot/Equilibrium index](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0724-find-pivot-index)                                  |             |
 | 16. | [First missing positive](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0041-first-missing-positive)                             |             |
 
+Strings
+=======
+| Sn. | Problem                                                                                                                                        |  Pattern  |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------- |  -------  |
+| 1.  | [Reverse words in a string](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0151-reverse-words-in-a-string)                        |           |
+| 2.  | [Minimum add to make parentheses valid](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0921-minimum-add-to-make-parentheses-valid)|           |
+| 3.  | [Minimum changes to make alternating binary string](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/1758-minimum-changes-to-make-alternating-binary-string)|     |
+
 Linked List
 ===========
 | Sn. | Problem                                                                                                                                        | Pattern |

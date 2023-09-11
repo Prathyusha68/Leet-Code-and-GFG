@@ -38,6 +38,7 @@ Linked List
 | 5.  | [Reverse linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0206-reverse-linked-list)                                    |         |
 | 6.  | [Middle of linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0876-middle-of-the-linked-list)                            |         |
 | 7.  | [Delete node in a linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0237-delete-node-in-a-linked-list)                  |         |
+| 8.  | [Detect cycle in a linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/blob/main/0141-linked-list-cycle/0141-linked-list-cycle.cpp) | 2 Pointer (Fast & Slow) |
 
 Stack & Queue
 =============

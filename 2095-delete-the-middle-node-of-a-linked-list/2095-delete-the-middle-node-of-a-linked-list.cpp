@@ -15,8 +15,14 @@ public:
         ListNode* fast = head;
         ListNode* prev = NULL;
         
-        if((head == NULL) || (head->next == NULL))
+        if(head == NULL)
             return NULL;
+        
+        if(head->next == NULL)
+        {
+            delete head;
+            return NULL;
+        }
         
         while((fast != NULL) && (fast->next != NULL))
         {

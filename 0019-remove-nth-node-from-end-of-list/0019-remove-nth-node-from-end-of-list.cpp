@@ -15,21 +15,12 @@ public:
         start->next = head;
         ListNode* slow = start;
         ListNode* fast = start;
+        
         // Maintain the distance btw slow and fast same as dist btw
         // last Nth node and last node
         for(int i = 0; i < n; i++)
             fast = fast->next;
-        
-        /*if((head == NULL) || ((head->next == NULL) && (n == 0)))
-            return head;
-        
-        if((head->next == NULL) && (n == 1))
-        {
-            delete head;
-            return NULL;
-        }*/
-            
-        
+                  
         while(fast->next != NULL)
         {
             slow = slow->next;
@@ -39,7 +30,7 @@ public:
         ListNode* delNode = slow->next;
         slow->next = slow->next->next;
         
-        //delete delNode;
+        delete delNode;
         
         return start->next;
     }

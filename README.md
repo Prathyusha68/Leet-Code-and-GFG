@@ -38,7 +38,14 @@ Linked List
 | 5.  | [Reverse linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0206-reverse-linked-list)                                    |         |
 | 6.  | [Middle of linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0876-middle-of-the-linked-list)                            |         |
 | 7.  | [Delete node in a linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0237-delete-node-in-a-linked-list)                  |         |
-| 8.  | [Detect cycle in a linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/blob/main/0141-linked-list-cycle/0141-linked-list-cycle.cpp) | 2 Pointer (Fast & Slow) |
+| 8.  | [Delete the middle node of linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/2095-delete-the-middle-node-of-a-linked-list) |       |
+| 9.  | [Remove Nth node from end of list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0019-remove-nth-node-from-end-of-list)          |         |
+| 10. | [Detect cycle in a linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/blob/main/0141-linked-list-cycle/0141-linked-list-cycle.cpp) | 2 Pointer (Fast & Slow) |
+| 11. | [Find the start point of loop in linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0142-linked-list-cycle-ii)           |         |
+| 12. | [Find the length of loop](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Find%20length%20of%20Loop%20-%20GFG)                     |         |
+| 13. | [Check if linked list is palindrome or not](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0234-palindrome-linked-list)           |         |
+| 14. | [Segrregate odd and even nodes of linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0328-odd-even-linked-list)          |         |
+| 15. | [Sort linked list of 0s, 1s and 2s](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Given%20a%20linked%20list%20of%200s%2C%201s%20and%202s%2C%20sort%20it.%20-%20GFG) |       |
 
 Stack & Queue
 =============

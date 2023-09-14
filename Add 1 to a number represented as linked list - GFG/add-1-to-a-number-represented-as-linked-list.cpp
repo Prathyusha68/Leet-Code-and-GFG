@@ -49,16 +49,16 @@ class Solution
     {
         Node* prev = NULL;
         Node* curr = head;
-        
+        Node* nxt;
         if((head == NULL) || (head->next == NULL))
             return head;
         
         while(curr != NULL)
         {
-            Node* temp = curr->next;
+            nxt = curr->next;
             curr->next = prev;
             prev = curr;
-            curr = temp;
+            curr = nxt;
         }
         
         return prev;

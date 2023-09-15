@@ -51,6 +51,7 @@ Linked List
 | 18. | [Rotate linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0061-rotate-list)                                             |         |
 | 19. | [Flattening of linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Flattening%20a%20Linked%20List%20-%20GFG)              |         |
 | 20. | [Copy linked list with random and next pointer](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0138-copy-list-with-random-pointer) |        |
+| 21. | [Reverse nodes in K-group](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0025-reverse-nodes-in-k-group)                          |         |
  
 Stack & Queue
 =============

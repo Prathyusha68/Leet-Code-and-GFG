@@ -48,6 +48,9 @@ Linked List
 | 15. | [Add 1 to number represented as linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Add%201%20to%20a%20number%20represented%20as%20linked%20list%20-%20GFG) |       |
 | 16. | [Add two numbers](https://github.com/Prathyusha68/Leet-Code/tree/main/0002-add-two-numbers)                                                    |         |
 | 17. | [Intersection of two linked lists](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0160-intersection-of-two-linked-lists)          |         |
+| 18. | [Rotate linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0061-rotate-list)                                             |         |
+| 19. | [Flattening of linked list](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Flattening%20a%20Linked%20List%20-%20GFG)              |         |
+| 20. | [Copy linked list with random and next pointer](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0138-copy-list-with-random-pointer) |        |
  
 Stack & Queue
 =============

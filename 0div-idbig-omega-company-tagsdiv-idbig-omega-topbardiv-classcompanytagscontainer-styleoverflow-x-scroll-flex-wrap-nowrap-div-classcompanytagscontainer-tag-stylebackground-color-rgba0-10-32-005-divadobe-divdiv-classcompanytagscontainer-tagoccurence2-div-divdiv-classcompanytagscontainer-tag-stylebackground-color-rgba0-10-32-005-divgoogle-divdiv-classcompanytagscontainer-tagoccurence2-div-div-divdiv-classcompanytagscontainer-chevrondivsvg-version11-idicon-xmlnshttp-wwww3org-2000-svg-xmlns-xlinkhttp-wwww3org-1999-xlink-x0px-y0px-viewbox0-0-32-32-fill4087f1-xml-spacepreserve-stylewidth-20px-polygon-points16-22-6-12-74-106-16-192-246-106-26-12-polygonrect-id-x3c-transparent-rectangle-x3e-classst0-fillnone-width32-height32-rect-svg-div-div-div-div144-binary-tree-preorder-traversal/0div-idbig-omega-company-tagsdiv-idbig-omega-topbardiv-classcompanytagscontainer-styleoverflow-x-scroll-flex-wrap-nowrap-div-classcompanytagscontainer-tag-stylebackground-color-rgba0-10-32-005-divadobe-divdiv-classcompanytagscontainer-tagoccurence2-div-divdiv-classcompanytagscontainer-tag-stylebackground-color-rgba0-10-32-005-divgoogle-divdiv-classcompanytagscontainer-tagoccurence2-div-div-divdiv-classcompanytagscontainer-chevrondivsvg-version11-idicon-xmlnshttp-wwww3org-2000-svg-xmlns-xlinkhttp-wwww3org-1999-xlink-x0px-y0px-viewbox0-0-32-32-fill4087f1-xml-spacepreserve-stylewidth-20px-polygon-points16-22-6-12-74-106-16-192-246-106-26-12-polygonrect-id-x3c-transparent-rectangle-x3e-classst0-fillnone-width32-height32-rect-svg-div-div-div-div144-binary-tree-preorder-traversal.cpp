@@ -47,7 +47,7 @@ public:
     vector<int> preorderTraversal(TreeNode* root) {
         vector<int> res;
         
-        preorderTraversalIterative(root, res);
+        preorderTraversalRecursive(root, res);
         
         return res;
     }

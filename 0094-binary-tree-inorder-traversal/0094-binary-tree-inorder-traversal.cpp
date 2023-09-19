@@ -26,16 +26,33 @@ class Solution {
             return;
         
         stack<TreeNode*> st;
-        st.push(root);
-
+        TreeNode* curr = root;
         
+        while(1)
+        {
+            if(curr != NULL)
+            {
+                st.push(curr);
+                curr = curr->left;
+            }
+            else
+            {
+                if(st.empty())
+                    break;
+                
+                TreeNode* node = st.top();
+                st.pop();
+                res.push_back(node->val);
+                curr = node->right;
+            }
+        }
     }
     
 public:
     vector<int> inorderTraversal(TreeNode* root) {
         vector<int> res;
         
-        inorderTraversalRecursive(root, res);
+        inorderTraversalIterative(root, res);
         
         return res;
     }

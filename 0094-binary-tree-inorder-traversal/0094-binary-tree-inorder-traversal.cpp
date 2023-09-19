@@ -52,7 +52,7 @@ public:
     vector<int> inorderTraversal(TreeNode* root) {
         vector<int> res;
         
-        inorderTraversalIterative(root, res);
+        inorderTraversalRecursive(root, res);
         
         return res;
     }

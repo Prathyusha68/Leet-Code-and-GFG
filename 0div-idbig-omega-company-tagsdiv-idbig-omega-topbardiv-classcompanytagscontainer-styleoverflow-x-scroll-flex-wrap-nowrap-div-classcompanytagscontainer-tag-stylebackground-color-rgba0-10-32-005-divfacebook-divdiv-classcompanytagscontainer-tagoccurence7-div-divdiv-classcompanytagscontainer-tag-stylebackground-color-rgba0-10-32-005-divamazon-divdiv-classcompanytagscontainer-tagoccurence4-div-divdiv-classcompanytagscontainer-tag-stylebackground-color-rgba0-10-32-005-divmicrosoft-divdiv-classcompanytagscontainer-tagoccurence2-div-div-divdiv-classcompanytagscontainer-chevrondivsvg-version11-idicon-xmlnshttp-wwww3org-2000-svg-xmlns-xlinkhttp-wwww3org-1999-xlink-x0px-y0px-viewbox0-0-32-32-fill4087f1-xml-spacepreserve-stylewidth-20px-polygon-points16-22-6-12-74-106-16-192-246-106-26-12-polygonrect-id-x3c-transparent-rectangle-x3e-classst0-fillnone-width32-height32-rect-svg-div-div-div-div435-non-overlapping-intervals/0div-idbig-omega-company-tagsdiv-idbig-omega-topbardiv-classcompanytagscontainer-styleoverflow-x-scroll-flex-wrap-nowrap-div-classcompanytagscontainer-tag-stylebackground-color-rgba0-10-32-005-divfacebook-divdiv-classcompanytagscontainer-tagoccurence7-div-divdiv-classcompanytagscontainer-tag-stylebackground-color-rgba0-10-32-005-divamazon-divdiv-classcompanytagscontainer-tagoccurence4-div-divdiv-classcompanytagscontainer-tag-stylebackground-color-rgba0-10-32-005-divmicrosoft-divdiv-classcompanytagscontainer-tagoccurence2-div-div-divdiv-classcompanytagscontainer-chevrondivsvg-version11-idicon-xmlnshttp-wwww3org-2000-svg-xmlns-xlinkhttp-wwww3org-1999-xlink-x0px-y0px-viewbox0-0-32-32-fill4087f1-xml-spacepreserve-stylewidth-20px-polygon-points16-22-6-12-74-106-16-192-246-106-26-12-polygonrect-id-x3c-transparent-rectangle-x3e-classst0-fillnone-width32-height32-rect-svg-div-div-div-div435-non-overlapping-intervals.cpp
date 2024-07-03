@@ -1,6 +1,6 @@
 class Solution {
     
-    bool static sortByEnd(vector<int>& a, vector<int>& b)
+    bool static sortByEnd(vector<int> a, vector<int> b)
     {
         return (a[1] < b[1]);
     }

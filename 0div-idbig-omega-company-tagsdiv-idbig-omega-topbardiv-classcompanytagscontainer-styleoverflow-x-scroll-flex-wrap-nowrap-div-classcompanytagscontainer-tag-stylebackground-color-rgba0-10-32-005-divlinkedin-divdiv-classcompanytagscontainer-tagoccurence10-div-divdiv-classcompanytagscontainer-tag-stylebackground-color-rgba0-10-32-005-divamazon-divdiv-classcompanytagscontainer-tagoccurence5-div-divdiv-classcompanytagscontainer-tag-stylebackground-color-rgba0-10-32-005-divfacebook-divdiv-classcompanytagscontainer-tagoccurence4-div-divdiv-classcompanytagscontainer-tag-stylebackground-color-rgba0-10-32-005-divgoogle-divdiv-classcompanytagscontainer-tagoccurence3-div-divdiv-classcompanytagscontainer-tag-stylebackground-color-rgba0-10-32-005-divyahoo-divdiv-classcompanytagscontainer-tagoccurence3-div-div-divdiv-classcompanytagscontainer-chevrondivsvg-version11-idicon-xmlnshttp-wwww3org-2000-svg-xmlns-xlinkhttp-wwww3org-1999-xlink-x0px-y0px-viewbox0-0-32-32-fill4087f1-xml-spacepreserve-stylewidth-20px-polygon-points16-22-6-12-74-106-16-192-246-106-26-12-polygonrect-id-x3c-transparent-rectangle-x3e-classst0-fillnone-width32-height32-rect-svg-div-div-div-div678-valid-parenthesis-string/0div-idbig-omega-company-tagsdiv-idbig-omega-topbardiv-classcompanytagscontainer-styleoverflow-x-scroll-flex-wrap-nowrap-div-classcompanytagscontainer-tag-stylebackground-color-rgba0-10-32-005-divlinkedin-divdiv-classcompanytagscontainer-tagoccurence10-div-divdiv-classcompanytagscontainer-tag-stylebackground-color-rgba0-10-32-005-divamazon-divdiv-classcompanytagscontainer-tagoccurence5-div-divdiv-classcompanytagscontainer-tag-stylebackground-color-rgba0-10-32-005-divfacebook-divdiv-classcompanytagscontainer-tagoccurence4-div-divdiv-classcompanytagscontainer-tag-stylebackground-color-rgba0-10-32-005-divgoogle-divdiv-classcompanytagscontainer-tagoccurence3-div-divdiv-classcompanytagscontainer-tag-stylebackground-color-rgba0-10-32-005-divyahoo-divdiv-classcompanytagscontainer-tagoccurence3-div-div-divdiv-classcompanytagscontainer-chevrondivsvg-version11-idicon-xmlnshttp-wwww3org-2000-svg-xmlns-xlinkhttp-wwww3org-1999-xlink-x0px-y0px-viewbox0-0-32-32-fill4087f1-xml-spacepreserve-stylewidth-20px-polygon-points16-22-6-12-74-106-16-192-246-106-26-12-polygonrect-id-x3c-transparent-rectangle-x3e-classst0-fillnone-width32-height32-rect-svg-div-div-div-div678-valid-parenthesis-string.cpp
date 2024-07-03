@@ -26,12 +26,10 @@ public:
             
             if(max < 0)
             {
-               cout<<"return false"<<endl;
                 return false;
             }
         }
         
-        cout<<min<<" "<<max<<endl;
         return (min == 0);
     }
 };

@@ -27,6 +27,7 @@ public:
         
         return minPathSum(m-1, n-1, grid, dp);
 #endif
+#if 0
         vector<vector<int>> dp(m, vector<int>(n, 0));
         
         for(int i = 0; i < m; i++)
@@ -51,5 +52,31 @@ public:
         }
         
         return dp[m-1][n-1];
+#endif
+        vector<int> curr(n, 0), prev(n, 0);
+        
+        for(int i = 0; i < m; i++)
+        {
+            for(int j = 0; j < n; j++)
+            {
+                if((i == 0) && (j ==0))
+                {
+                    curr[0] = grid[0][0];
+                    continue;
+                }
+
+                int left = INT_MAX, up = INT_MAX;
+                if(j-1 >= 0)
+                    left = grid[i][j] + curr[j-1];
+                
+                if(i-1 >= 0)
+                    up = grid[i][j] + prev[j];
+                
+                curr[j] = min(left, up);
+            }
+            prev = curr;
+        }
+        
+        return prev[n-1];
     }
 };

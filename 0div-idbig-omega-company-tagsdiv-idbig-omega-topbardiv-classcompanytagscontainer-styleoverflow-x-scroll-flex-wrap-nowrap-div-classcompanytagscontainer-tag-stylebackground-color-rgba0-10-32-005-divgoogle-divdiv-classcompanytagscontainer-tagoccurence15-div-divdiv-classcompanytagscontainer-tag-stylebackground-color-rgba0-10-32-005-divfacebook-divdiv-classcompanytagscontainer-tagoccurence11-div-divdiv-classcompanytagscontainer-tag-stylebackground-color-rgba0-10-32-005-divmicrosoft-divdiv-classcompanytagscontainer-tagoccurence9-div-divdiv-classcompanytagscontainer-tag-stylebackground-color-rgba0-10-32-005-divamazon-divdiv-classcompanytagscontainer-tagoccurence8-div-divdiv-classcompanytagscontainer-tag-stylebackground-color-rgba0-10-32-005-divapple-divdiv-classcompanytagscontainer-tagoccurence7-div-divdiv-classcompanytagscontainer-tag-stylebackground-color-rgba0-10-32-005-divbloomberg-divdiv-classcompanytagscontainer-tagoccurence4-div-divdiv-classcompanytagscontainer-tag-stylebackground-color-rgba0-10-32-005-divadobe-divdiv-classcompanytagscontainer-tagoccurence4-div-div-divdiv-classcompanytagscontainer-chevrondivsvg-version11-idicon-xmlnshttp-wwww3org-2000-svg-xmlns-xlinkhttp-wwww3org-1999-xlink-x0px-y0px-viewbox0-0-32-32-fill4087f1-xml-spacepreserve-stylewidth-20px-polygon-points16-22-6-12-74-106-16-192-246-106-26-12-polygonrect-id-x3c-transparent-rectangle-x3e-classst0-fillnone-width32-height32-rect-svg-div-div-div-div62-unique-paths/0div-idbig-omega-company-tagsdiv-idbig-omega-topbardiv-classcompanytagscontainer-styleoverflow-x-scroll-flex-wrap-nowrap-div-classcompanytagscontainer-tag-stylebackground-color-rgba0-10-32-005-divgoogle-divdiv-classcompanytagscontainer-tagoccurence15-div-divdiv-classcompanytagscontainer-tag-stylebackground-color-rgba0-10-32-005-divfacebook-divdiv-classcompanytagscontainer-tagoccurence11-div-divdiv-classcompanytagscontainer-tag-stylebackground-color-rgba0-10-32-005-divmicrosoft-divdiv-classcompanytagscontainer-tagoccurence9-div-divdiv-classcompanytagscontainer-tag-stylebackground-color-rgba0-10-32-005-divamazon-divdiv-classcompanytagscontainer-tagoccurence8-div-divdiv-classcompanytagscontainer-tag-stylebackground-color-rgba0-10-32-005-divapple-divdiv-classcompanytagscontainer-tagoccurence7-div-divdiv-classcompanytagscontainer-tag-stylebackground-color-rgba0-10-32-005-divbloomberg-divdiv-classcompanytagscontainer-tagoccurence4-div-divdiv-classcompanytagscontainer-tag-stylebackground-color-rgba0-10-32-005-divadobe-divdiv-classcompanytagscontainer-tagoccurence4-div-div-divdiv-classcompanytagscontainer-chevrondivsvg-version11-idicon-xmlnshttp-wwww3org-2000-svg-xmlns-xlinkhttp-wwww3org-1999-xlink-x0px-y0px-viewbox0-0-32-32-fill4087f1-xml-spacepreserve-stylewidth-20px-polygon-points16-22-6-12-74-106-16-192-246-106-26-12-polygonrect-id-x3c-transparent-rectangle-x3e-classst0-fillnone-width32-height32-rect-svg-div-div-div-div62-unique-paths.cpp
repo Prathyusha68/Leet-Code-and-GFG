@@ -13,9 +13,9 @@ class Solution {
             return dp[i][j];
         
         int left = uniquePaths(i, j-1, dp);
-        int right = uniquePaths(i-1, j, dp);
+        int up = uniquePaths(i-1, j, dp);
         
-        return (dp[i][j] = left + right);
+        return (dp[i][j] = left + up);
     }
     
 public:
@@ -43,11 +43,11 @@ public:
                 if(j-1 >= 0)
                     left = dp[i][j-1];
                 
-                int right = 0;
+                int up = 0;
                 if(i-1 >= 0)
-                    right = dp[i-1][j];
+                    up = dp[i-1][j];
                 
-                dp[i][j] = left + right;
+                dp[i][j] = left + up;
             }
         }
         
@@ -71,11 +71,11 @@ public:
                 if(j-1 >= 0)
                     left = curr[j-1];
                 
-                int right = 0;
+                int up = 0;
                 if(i-1 >= 0)
-                    right = prev[j];
+                    up = prev[j];
                 
-                curr[j] = left + right;
+                curr[j] = left + up;
             }
             prev = curr;
         }

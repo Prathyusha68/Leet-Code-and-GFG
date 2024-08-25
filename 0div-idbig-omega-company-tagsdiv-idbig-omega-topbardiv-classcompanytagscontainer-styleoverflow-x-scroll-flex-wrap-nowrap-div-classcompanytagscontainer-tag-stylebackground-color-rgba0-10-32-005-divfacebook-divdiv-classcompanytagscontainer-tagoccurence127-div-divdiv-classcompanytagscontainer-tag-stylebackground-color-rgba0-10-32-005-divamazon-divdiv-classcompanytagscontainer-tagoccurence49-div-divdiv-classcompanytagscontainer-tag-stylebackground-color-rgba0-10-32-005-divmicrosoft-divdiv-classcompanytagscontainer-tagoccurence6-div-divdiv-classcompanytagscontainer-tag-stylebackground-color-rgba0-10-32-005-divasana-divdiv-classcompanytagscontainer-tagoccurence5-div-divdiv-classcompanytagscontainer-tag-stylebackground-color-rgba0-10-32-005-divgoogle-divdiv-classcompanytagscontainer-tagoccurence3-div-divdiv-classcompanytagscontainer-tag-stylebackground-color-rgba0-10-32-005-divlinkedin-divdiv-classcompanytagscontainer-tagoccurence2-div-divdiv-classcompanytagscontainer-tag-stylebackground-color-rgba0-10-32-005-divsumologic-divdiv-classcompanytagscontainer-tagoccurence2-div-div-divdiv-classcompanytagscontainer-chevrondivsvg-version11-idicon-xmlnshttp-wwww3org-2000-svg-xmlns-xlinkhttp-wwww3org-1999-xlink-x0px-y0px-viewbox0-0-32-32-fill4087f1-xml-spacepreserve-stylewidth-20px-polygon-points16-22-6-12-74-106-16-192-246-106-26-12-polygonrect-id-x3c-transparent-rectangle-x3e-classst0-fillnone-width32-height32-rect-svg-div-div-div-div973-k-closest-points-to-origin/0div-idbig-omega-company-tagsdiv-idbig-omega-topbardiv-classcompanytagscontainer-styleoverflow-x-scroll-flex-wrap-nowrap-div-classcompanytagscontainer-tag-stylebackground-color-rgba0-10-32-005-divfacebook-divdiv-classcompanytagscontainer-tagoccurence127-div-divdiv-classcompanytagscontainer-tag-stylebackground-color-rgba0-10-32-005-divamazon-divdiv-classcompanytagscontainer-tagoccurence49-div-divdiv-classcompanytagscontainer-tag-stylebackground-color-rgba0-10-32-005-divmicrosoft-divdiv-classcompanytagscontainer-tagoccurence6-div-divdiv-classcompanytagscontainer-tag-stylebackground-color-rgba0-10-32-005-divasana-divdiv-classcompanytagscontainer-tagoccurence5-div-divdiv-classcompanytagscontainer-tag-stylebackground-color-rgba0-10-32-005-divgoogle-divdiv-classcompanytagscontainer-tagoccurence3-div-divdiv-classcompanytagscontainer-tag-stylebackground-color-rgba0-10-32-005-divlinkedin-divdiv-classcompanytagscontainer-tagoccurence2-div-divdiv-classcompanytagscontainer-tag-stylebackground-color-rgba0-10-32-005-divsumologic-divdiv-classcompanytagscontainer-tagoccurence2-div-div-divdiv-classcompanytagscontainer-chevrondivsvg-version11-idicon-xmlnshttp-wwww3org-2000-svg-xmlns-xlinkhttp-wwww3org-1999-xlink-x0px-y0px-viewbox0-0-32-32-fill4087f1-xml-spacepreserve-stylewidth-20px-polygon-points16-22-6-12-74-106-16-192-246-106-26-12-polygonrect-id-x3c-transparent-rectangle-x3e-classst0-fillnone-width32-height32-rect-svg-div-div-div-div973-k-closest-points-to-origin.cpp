@@ -1,11 +1,11 @@
 class Solution {
 public:
     vector<vector<int>> kClosest(vector<vector<int>>& points, int k) {
-        priority_queue<pair<int, pair<int,int>>> maxH;
+        priority_queue<pair<double, pair<int,int>>> maxH;
         
         for(int i = 0; i < points.size(); i++)
         {
-            maxH.push({(points[i][0]*points[i][0] + points[i][1]*points[i][1]), {points[i][0], points[i][1]}});
+            maxH.push({sqrt(points[i][0]*points[i][0] + points[i][1]*points[i][1]), {points[i][0], points[i][1]}});
             
             if(maxH.size() > k)
                 maxH.pop();

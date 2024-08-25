@@ -81,13 +81,14 @@ Heaps
 =====
 | Sn. | Problem                                                                                                                                        |  Pattern  |
 | --- | ---------------------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| 1.  | [Kth largest element in an array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0215-kth-largest-element-in-an-array)            | Max Heap  |
+| 1.  | [Kth largest element in an array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0215-kth-largest-element-in-an-array)            | Min Heap  |
 | 2.  | [Kth smallest element in an array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Kth%20smallest%20element%20-%20GFG)             | Max Heap  |
-| 3.  | [Kth smallest element in a sorted matrix](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0378-kth-smallest-element-in-a-sorted-matrix) | Min Heap |
+| 3.  | [Kth smallest element in a sorted matrix](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0378-kth-smallest-element-in-a-sorted-matrix) | Max Heap |
 | 4.  | [Merge k sorted lists](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0023-merge-k-sorted-lists)                                  | Min Heap |
 | 5.  | [Nearly sorted/ K Sorted Array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Difficulty%3A%20Medium/Nearly%20sorted)            | Min Heap |
-| 6.  | [Find K Closest Elements](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0658-find-k-closest-elements)                            | Min Heap |
+| 6.  | [Find K Closest Elements](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0658-find-k-closest-elements)                            | Max Heap |
 | 7.  | [Top K Frequent Elements](https://github.com/Prathyusha68/Leet-Code-and-GFG/blob/main/347.%20Top%20K%20Frequent%20Elements)                    | Min Heap |
+| 8.  | [Sorting by Frequency](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Difficulty%3A%20Medium/Sorting%20Elements%20of%20an%20Array%20by%20Frequency)  | Min/Max Heap |
 
 Binary Trees (BT)
 =================

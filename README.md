@@ -86,6 +86,7 @@ Heaps
 | 3.  | [Kth smallest element in a sorted matrix](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0378-kth-smallest-element-in-a-sorted-matrix) | Min Heap |
 | 4.  | [Merge k sorted lists](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0023-merge-k-sorted-lists)                                  | Min Heap |
 | 5.  | [Nearly sorted/ K Sorted Array](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Difficulty%3A%20Medium/Nearly%20sorted)            | Min Heap |
+| 6.  | [Find K Closest Elements](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/0658-find-k-closest-elements)                            | Min Heap |
 
 Binary Trees (BT)
 =================

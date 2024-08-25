@@ -91,6 +91,7 @@ Heaps
 | 8.  | [Sorting by Frequency](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Difficulty%3A%20Medium/Sorting%20Elements%20of%20an%20Array%20by%20Frequency)  | Min/Max Heap |
 | 9.  | [K Closest Points to Origin](https://github.com/Prathyusha68/Leet-Code-and-GFG/blob/main/973.%20K%20Closest%20Points%20to%20Origin)            | Max Heap |
 | 10. | [Minimum Cost of ropes](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Difficulty%3A%20Easy/Minimum%20Cost%20of%20ropes)          | Min Heap |
+| 11. | [Sum of elements between k1'th and k2'th smallest elements](https://github.com/Prathyusha68/Leet-Code-and-GFG/tree/main/Difficulty%3A%20Easy/Sum%20of%20elements%20between%20k1'th%20and%20k2'th%20smallest%20elements)  | Max Heap |
 
 Binary Trees (BT)
 =================

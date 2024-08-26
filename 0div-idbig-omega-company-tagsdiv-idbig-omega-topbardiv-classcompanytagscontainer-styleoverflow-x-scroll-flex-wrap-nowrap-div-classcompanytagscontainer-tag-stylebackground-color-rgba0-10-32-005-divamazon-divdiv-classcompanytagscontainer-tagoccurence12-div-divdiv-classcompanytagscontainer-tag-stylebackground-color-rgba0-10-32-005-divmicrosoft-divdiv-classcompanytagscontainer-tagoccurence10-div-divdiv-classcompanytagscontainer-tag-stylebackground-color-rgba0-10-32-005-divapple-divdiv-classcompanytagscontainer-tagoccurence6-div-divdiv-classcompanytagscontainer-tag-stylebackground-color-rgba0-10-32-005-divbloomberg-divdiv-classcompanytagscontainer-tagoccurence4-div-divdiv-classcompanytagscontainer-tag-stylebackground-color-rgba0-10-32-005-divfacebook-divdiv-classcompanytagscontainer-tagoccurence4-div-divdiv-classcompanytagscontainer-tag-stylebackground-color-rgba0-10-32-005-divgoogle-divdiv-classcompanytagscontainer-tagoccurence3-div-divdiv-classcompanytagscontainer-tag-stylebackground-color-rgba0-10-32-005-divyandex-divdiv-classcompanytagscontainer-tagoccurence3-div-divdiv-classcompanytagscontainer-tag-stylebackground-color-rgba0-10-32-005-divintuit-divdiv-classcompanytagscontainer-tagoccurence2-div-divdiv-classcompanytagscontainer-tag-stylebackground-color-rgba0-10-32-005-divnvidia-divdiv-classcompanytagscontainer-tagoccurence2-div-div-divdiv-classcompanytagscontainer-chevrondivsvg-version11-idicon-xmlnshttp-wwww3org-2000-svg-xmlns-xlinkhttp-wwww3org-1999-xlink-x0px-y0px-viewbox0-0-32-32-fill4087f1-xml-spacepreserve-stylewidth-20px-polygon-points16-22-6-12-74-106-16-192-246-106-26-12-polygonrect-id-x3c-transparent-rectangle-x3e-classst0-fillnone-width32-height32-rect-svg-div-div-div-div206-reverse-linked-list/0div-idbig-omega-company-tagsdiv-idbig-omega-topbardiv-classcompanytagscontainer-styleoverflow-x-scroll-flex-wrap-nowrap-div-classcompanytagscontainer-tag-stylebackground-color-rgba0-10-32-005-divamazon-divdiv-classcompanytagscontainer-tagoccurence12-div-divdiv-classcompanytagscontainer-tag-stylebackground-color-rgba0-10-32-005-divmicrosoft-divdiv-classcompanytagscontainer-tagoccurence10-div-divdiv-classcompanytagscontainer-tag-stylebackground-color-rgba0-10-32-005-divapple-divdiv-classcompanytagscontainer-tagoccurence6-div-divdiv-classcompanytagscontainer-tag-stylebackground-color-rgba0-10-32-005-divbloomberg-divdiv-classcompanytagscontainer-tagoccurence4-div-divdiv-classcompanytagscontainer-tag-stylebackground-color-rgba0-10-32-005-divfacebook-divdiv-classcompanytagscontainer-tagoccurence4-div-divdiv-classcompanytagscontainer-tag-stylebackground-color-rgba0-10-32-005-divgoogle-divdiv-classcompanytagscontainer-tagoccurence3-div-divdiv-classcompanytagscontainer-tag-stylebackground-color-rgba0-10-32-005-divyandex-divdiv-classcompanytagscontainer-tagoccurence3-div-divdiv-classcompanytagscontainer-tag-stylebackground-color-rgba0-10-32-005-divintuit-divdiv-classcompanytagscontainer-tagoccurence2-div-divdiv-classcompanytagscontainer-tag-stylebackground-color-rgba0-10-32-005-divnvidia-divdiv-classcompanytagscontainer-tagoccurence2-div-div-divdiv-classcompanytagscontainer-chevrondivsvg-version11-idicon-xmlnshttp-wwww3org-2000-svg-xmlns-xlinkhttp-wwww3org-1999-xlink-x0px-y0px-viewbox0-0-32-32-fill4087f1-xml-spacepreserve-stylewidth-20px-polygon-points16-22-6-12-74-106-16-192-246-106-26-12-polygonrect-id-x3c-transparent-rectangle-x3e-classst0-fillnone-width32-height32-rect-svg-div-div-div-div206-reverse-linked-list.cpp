@@ -26,7 +26,6 @@ public:
     ListNode* reverseList(ListNode* head) {
         ListNode* newHead = NULL;
         reverse(NULL, head, &newHead);
-        //cout<<newHead<<endl;
         return newHead;
     }
 };

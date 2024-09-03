@@ -11,9 +11,9 @@ public:
         }
         
         // if vector is not sorted there will be more than one peak
-        if(count > 1)
-            return false;
-        else
+        if(count <= 1)
             return true;
+        else
+            return false;
     }
 };

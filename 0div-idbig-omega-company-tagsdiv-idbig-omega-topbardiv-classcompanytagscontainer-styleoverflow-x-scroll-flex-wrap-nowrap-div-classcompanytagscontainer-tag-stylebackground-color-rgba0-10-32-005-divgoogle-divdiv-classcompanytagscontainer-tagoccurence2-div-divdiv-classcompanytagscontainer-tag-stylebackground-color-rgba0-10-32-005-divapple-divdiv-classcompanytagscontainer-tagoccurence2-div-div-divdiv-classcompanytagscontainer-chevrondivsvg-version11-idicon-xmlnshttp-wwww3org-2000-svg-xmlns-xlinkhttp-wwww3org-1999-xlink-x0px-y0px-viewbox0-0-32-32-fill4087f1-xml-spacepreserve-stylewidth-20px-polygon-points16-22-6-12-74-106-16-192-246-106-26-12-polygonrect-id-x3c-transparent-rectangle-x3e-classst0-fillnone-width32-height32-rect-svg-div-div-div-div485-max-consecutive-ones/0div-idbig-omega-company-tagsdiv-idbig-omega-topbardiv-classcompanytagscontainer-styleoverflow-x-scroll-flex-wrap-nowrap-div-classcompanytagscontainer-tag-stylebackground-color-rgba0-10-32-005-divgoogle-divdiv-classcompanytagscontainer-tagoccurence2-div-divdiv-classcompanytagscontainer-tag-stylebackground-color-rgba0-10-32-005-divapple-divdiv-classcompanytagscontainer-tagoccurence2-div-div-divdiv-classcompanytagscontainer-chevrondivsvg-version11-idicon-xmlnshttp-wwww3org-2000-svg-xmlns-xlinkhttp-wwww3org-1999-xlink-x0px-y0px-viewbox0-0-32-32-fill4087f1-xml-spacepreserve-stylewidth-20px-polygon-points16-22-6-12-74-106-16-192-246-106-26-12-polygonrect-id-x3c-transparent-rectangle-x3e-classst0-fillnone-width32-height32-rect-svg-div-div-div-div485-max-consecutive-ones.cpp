@@ -11,12 +11,13 @@ public:
             }
             else
             {
-                maxCnt = max(maxCnt, cnt);
                 cnt = 0;
             }
+            
+            maxCnt = max(cnt, maxCnt);
         }
         
-        maxCnt = max(cnt, maxCnt);
+
         return maxCnt;
     }
 };

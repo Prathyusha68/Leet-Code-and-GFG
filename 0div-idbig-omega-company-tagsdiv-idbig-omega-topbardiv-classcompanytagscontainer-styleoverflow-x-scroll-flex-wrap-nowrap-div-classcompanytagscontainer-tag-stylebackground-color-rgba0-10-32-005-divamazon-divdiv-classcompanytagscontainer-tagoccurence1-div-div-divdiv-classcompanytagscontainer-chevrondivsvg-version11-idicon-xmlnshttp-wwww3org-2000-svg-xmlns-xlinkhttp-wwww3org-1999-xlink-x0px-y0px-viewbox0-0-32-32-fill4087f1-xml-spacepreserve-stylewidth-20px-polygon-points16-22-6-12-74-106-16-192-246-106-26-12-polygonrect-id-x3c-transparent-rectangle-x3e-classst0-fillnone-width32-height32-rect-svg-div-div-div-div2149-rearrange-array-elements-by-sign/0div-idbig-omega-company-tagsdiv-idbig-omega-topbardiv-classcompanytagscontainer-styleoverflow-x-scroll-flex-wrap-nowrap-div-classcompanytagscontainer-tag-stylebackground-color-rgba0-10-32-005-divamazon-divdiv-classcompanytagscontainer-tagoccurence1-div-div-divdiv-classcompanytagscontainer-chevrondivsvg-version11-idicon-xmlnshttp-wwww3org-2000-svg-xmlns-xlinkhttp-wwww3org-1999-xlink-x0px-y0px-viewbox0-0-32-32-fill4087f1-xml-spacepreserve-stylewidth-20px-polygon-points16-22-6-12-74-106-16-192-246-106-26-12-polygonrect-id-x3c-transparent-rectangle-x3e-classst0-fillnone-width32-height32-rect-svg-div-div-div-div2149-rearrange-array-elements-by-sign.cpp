@@ -5,12 +5,12 @@ public:
         vector<int> ans(nums.size(), 0);
         for(int i = 0; i < nums.size(); i++)
         {
-            if((nums[i] >= 0) && (even < nums.size()))
+            if(nums[i] >= 0)
             {
                 ans[even] = nums[i];
                 even += 2;
             }
-            else if(odd < nums.size())
+            else
             {
                 ans[odd] = nums[i];
                 odd += 2;
